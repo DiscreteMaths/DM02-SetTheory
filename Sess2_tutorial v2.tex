@@ -1,167 +1,10 @@
-%\documentclass[11pt, a4paper,dalthesis]{report}    % final
-%\documentclass[11pt,a4paper,dalthesis]{report}
-%\documentclass[11pt,a4paper,dalthesis]{book}
-
-\documentclass[11pt,a4paper,titlepage,oneside,openany]{article}
-
-\pagestyle{plain}
-%\renewcommand{\baselinestretch}{1.7}
-
-\usepackage{setspace}
-%\singlespacing
-\onehalfspacing
-%\doublespacing
-%\setstretch{1.1}
-
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{multicol}
-
-\usepackage[margin=3cm]{geometry}
-\usepackage{graphicx,psfrag}%\usepackage{hyperref}
-\usepackage[small]{caption}
-\usepackage{subfig}
-
-\usepackage{algorithm}
-\usepackage{algorithmic}
-\newcommand{\theHalgorithm}{\arabic{algorithm}}
-
-\usepackage{varioref} %NB: FIGURE LABELS MUST ALWAYS COME DIRECTLY AFTER CAPTION!!!
-%\newcommand{\vref}{\ref}
-
-\usepackage{index}
-\makeindex
-\newindex{sym}{adx}{and}{Symbol Index}
-%\newcommand{\symindex}{\index[sym]}
-%\newcommand{\symindex}[1]{\index[sym]{#1}\hfill}
-\newcommand{\symindex}[1]{\index[sym]{#1}}
-
-%\usepackage[breaklinks,dvips]{hyperref}%Always put after varioref, or you'll get nested section headings
-%Make sure this is after index package too!
-%\hypersetup{colorlinks=false,breaklinks=true}
-%\hypersetup{colorlinks=false,breaklinks=true,pdfborder={0 0 0.15}}
-
-
-%\usepackage{breakurl}
-
-\graphicspath{{./images/}}
-
-\usepackage[subfigure]{tocloft}%For table of contents
-\setlength{\cftfignumwidth}{3em}
-
-\input{longdiv}
-\usepackage{wrapfig}
-
-
-%\usepackage{index}
-%\makeindex
-%\usepackage{makeidx}
-
-%\usepackage{lscape}
-\usepackage{pdflscape}
-\usepackage{multicol}
-
-\usepackage[utf8]{inputenc}
-
-%\usepackage{fullpage}
-
-%Compulsory packages for the PhD in UL:
-%\usepackage{UL Thesis}
-\usepackage{natbib}
-
-%\numberwithin{equation}{section}
-\numberwithin{equation}{section}
-\numberwithin{algorithm}{section}
-\numberwithin{figure}{section}
-\numberwithin{table}{section}
-%\newcommand{\vec}[1]{\ensuremath{\math{#1}}}
-
-%\linespread{1.6} %for double line spacing
-
-\usepackage{afterpage}%fingers crossed
-
-\newtheorem{thm}{Theorem}[section]
-\newtheorem{defin}{Definition}[section]
-\newtheorem{cor}[thm]{Corollary}
-\newtheorem{lem}[thm]{Lemma}
-
-%\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mu d}}
-\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mud}}
-
-\newcommand{\bbSigma}{{\mkern+8mu\mathsf{\Sigma}\mkern-9mu{\Sigma}}}
-\newcommand{\thrfor}{{\Rightarrow}}
-
-\newcommand{\mb}{\mathbb}
-\newcommand{\bx}{\vec{x}}
-\newcommand{\bxi}{\boldsymbol{\xi}}
-\newcommand{\bdeta}{\boldsymbol{\eta}}
-\newcommand{\bldeta}{\boldsymbol{\eta}}
-\newcommand{\bgamma}{\boldsymbol{\gamma}}
-\newcommand{\bTheta}{\boldsymbol{\Theta}}
-\newcommand{\balpha}{\boldsymbol{\alpha}}
-\newcommand{\bmu}{\boldsymbol{\mu}}
-\newcommand{\bnu}{\boldsymbol{\nu}}
-\newcommand{\bsigma}{\boldsymbol{\sigma}}
-\newcommand{\bdiff}{\boldsymbol{\partial}}
-
-\newcommand{\tomega}{\widetilde{\omega}}
-\newcommand{\tbdeta}{\widetilde{\bdeta}}
-\newcommand{\tbxi}{\widetilde{\bxi}}
-
-
-
-\newcommand{\wv}{\vec{w}}
-
-\newcommand{\ie}{i.e. }
-\newcommand{\eg}{e.g. }
-\newcommand{\etc}{etc}
-
-\newcommand{\viceversa}{vice versa}
-\newcommand{\FT}{\mathcal{F}}
-\newcommand{\IFT}{\mathcal{F}^{-1}}
-%\renewcommand{\vec}[1]{\boldsymbol{#1}}
-\renewcommand{\vec}[1]{\mathbf{#1}}
-\newcommand{\anged}[1]{\langle #1 \rangle}
-\newcommand{\grv}[1]{\grave{#1}}
-\newcommand{\asinh}{\sinh^{-1}}
-
-\newcommand{\sgn}{\text{sgn}}
-\newcommand{\morm}[1]{|\det #1 |}
-
-\newcommand{\galpha}{\grv{\alpha}}
-\newcommand{\gbeta}{\grv{\beta}}
-%\newcommand{\rnlessO}{\mb{R}^n \setminus \vec{0}}
-\usepackage{listings}
-
-\interfootnotelinepenalty=10000
-
-\newcommand{\sectionline}{%
-  \nointerlineskip %%- \vspace{\baselineskip}%
-  \hspace{\fill}\rule{0.5\linewidth}{.7pt}\hspace{\fill}%
-  \par\nointerlineskip %%- \vspace{\baselineskip}
-}
-
-\renewcommand{\labelenumii}{\roman{enumii})}
-
-\begin{document}
-
-
-
-
-
-
-
-
-
-\end{document}
 
 
 NOTATIONS FOR A SET:
 
 A set can be represented by two methods:
-1.	ROSTER METHOD
-2.	BUILDER METHOD
+1.ROSTER METHOD
+2.BUILDER METHOD
 ROSTER METHOD:
 
 In this method the elements of a set are separated by commas and are enclosed within curly brackets { }. For example:
@@ -246,11 +89,11 @@ A = {x   Z: 2x + 1} is a set of all odd integers.
 %--------------------------------- %
 \section*{The Universal Set and the Empty Set}
 \begin{itemize}
-	\item The first is the \textbf{\textit{universal set}}, typically denoted $U$. This set is all of the elements that we may choose from. This set may be different from one setting to the next. 
-	
-	\item For example one universal set may be the set of all real numbers, denoted $\mathbb{R}$, whereas for another problem the universal set may be the whole numbers $\{0, 1, 2,\ldots\}$.
-	
-	\item The other set that requires consideration is called the \textit{\textbf{empty set}}. The empty set is the unique set is the set with no elements. We write this as $\{ \}$ and denote this set by $\emptyset$.
+\item The first is the \textbf{\textit{universal set}}, typically denoted $U$. This set is all of the elements that we may choose from. This set may be different from one setting to the next. 
+
+\item For example one universal set may be the set of all real numbers, denoted $\mathbb{R}$, whereas for another problem the universal set may be the whole numbers $\{0, 1, 2,\ldots\}$.
+
+\item The other set that requires consideration is called the \textit{\textbf{empty set}}. The empty set is the unique set is the set with no elements. We write this as $\{ \}$ and denote this set by $\emptyset$.
 \end{itemize}
 
 %========================================================================================= %
@@ -336,7 +179,7 @@ Consider the universal set $U$ such that
 \[U=\{2,4,6,8,10,12,15\} \]
 For each of the sets $A$,$B$,$C$ and $D$, specify the complement sets.
 {
-	
+
 \begin{center}
 \begin{tabular}{|c|c|}
   \hline
@@ -357,9 +200,9 @@ $C=\{2,6,12,15\}$ & \\ \hline $D=\{8,10,15\}$ & \\ \hline
 \newpage
 \section*{Set Operations}
 \begin{itemize}
-	\item Union ($\cup$) - also known as the \textbf{OR} operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
-	\item Intersection ($\cap$) - also known as the \textbf{AND} operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
-	\item Complement ($A^{\prime}$ or $A^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
+\item Union ($\cup$) - also known as the \textbf{OR} operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
+\item Intersection ($\cap$) - also known as the \textbf{AND} operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
+\item Complement ($A^{\prime}$ or $A^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
 \end{itemize}
 
 \subsection*{Exercise}
@@ -371,12 +214,12 @@ and the sets
 
 \begin{multicols}{2}
 \begin{itemize}
-	\item[(a)] $A-B$
-	\item[(b)] $A \otimes B$
-	\item[(c)] $A \cap B$
-	\item[(d)] $A \cup B$
-	\item[(e)] $A^{\prime} \cap B^{\prime}$
-	\item[(f)] $A^{\prime} \cup B^{\prime}$
+\item[(a)] $A-B$
+\item[(b)] $A \otimes B$
+\item[(c)] $A \cap B$
+\item[(d)] $A \cup B$
+\item[(e)] $A^{\prime} \cap B^{\prime}$
+\item[(f)] $A^{\prime} \cup B^{\prime}$
 \end{itemize}
 \end{multicols}
 
@@ -404,64 +247,64 @@ $B = \{1,4,5,6\}$\\
 
 %------------------------------------------------------------------------%
 \begin{itemize}
-	\item[(i)] Describe the following set by the listing method
-	\[ \{ 2r+1 : r \in Z^{+} and r \leq 5  \} \]
-	\item[(ii)] Let A,B be subsets of the universal set U.
-	
-	
+\item[(i)] Describe the following set by the listing method
+\[ \{ 2r+1 : r \in Z^{+} and r \leq 5  \} \]
+\item[(ii)] Let A,B be subsets of the universal set U.
+
+
 \end{itemize}
 
 %===================================================================================== %
 \subsection*{Question 1}
 
 \begin{itemize}
-	\item $\{ s :  \mbox{ s is an odd integer and } 2 \leq s \leq 10 \}$
-	\item $\{ 2m :  m \in Z \mbox{ and }5 \leq m \leq 10 \}$
-	\item $\{ 2^t :  t \in Z \mbox{ and } 0 \leq t \leq 5 \}$
+\item $\{ s :  \mbox{ s is an odd integer and } 2 \leq s \leq 10 \}$
+\item $\{ 2m :  m \in Z \mbox{ and }5 \leq m \leq 10 \}$
+\item $\{ 2^t :  t \in Z \mbox{ and } 0 \leq t \leq 5 \}$
 \end{itemize}
 
 %=======================+============================================================== %
 \subsection*{Question 2}
 
 \begin{itemize}
-	\item $\{12,13,14,15,16,17\}$
-	\item $\{0,5,-5,10,-10,15,-15,.....\}$
-	\item $\{6,8,10,12,14,16,18\}$
+\item $\{12,13,14,15,16,17\}$
+\item $\{0,5,-5,10,-10,15,-15,.....\}$
+\item $\{6,8,10,12,14,16,18\}$
 \end{itemize}
 
 \subsection*{Question 7 : Membership Tables}
 Using membership tables
 \begin{tabular}{|ccc|c|c|c|}
-	\hline
-	% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-	A & B & C & x & y & z \\\hline
-	0 & 0 & 0 & 1 & 1 & 1 \\
-	0 & 0 & 1 & 0 & 0 & 1 \\
-	0 & 1 & 0 & 0 & 0 & 1 \\
-	0 & 1 & 1 & 0 & 0 & 1 \\
-	1 & 0 & 0 & 1 & 0 & 1 \\
-	1 & 0 & 1 & 1 & 0 & 1 \\
-	1 & 1 & 0 & 0 & 0 & 1 \\
-	1 & 1 & 1 & 1 & 0 & 1 \\
-	\hline
+\hline
+% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+A & B & C & x & y & z \\\hline
+0 & 0 & 0 & 1 & 1 & 1 \\
+0 & 0 & 1 & 0 & 0 & 1 \\
+0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 1 & 1 & 0 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 1 & 0 & 1 \\
+1 & 1 & 0 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 0 & 1 \\
+\hline
 \end{tabular}
 \begin{itemize}
-	\item[(i)] Draw a venn diagram to show three subsets A,B and C of a universal set U intersecting in
-	the most general way?
-	\item[(ii)] How are sets $X$ and $Z$ related?
-	\item[(iii)] Can you describe each of the subsets X,Y and Z in terms  of the
-	sets A,B,C using the operations union intersection and set complement.
+\item[(i)] Draw a venn diagram to show three subsets A,B and C of a universal set U intersecting in
+the most general way?
+\item[(ii)] How are sets $X$ and $Z$ related?
+\item[(iii)] Can you describe each of the subsets X,Y and Z in terms  of the
+sets A,B,C using the operations union intersection and set complement.
 \end{itemize}
 %================================================================ %
 \subsection*{Question 8}
 \begin{itemize}
-	
-	\item[(i)] 
-	
-	\item[(ii)]
-	
-	\item[(iii)]
-	
+
+\item[(i)] 
+
+\item[(ii)]
+
+\item[(iii)]
+
 \end{itemize}
 
 \end{document}
@@ -763,7 +606,7 @@ The single element set $\{5\} $ is a subset of $A$.
 
 {Subsets and Elements of Sets}
 
-%%- \vspace{-2cm}
+%%- 
 \textbf{Proper Subsets}\\
 Given two sets $A$ and $B$, the set $A$ is a \textbf{proper subset} of set $B$ if every element of $A$ is also an element of $B$, but there are elements of set $B$ that are not in set $A$.
 
@@ -776,7 +619,7 @@ We write this mathematically as
 
 {Subsets and Elements of Sets}
 
-%%- \vspace{-2cm}
+%%- 
 \textbf{Equivalent Sets}\\
 If both of the following two statements are \textbf{true}, 
 \[\mbox{1)  } A \subseteq B \]
@@ -792,7 +635,7 @@ then $A$ and $B$ are \textbf{equivalent sets}.
 
 {Subsets and Elements of Sets}
 
-%%- \vspace{-2cm}
+%%- 
 \textbf{Non-Comparable Sets}\\
 If both of the following two statements are \textbf{false}, 
 \[\mbox{1)  } A \subseteq B \]

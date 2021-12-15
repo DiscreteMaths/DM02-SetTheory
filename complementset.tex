@@ -1,0 +1,275 @@
+
+
+\documentclass[11pt,a4paper,titlepage,oneside,openany]{article}
+
+\pagestyle{plain}
+%\renewcommand{\baselinestretch}{1.7}
+
+\usepackage{setspace}
+%\singlespacing
+\onehalfspacing
+%\doublespacing
+%\setstretch{1.1}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{multicol}
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{graphicx,psfrag}%\usepackage{hyperref}
+\usepackage[small]{caption}
+\usepackage{subfig}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+\usepackage{varioref} %NB: FIGURE LABELS MUST ALWAYS COME DIRECTLY AFTER CAPTION!!!
+%\newcommand{\vref}{\ref}
+
+\usepackage{index}
+\makeindex
+\newindex{sym}{adx}{and}{Symbol Index}
+%\newcommand{\symindex}{\index[sym]}
+%\newcommand{\symindex}[1]{\index[sym]{#1}\hfill}
+\newcommand{\symindex}[1]{\index[sym]{#1}}
+
+%\usepackage[breaklinks,dvips]{hyperref}%Always put after varioref, or you'll get nested section headings
+%Make sure this is after index package too!
+%\hypersetup{colorlinks=false,breaklinks=true}
+%\hypersetup{colorlinks=false,breaklinks=true,pdfborder={0 0 0.15}}
+
+
+%\usepackage{breakurl}
+
+\graphicspath{{./images/}}
+
+\usepackage[subfigure]{tocloft}%For table of contents
+\setlength{\cftfignumwidth}{3em}
+
+\input{longdiv}
+\usepackage{wrapfig}
+
+
+%\usepackage{index}
+%\makeindex
+%\usepackage{makeidx}
+
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+
+%\usepackage{fullpage}
+
+%Compulsory packages for the PhD in UL:
+%\usepackage{UL Thesis}
+\usepackage{natbib}
+
+%\numberwithin{equation}{section}
+\numberwithin{equation}{section}
+\numberwithin{algorithm}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+%\newcommand{\vec}[1]{\ensuremath{\math{#1}}}
+
+%\linespread{1.6} %for double line spacing
+
+\usepackage{afterpage}%fingers crossed
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defin}{Definition}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+
+%\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mu d}}
+\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mud}}
+
+\newcommand{\bbSigma}{{\mkern+8mu\mathsf{\Sigma}\mkern-9mu{\Sigma}}}
+\newcommand{\thrfor}{{\Rightarrow}}
+
+\newcommand{\mb}{\mathbb}
+\newcommand{\bx}{\vec{x}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+\newcommand{\bdeta}{\boldsymbol{\eta}}
+\newcommand{\bldeta}{\boldsymbol{\eta}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bnu}{\boldsymbol{\nu}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\bdiff}{\boldsymbol{\partial}}
+
+\newcommand{\tomega}{\widetilde{\omega}}
+\newcommand{\tbdeta}{\widetilde{\bdeta}}
+\newcommand{\tbxi}{\widetilde{\bxi}}
+
+
+
+\newcommand{\wv}{\vec{w}}
+
+\newcommand{\ie}{i.e. }
+\newcommand{\eg}{e.g. }
+\newcommand{\etc}{etc}
+
+\newcommand{\viceversa}{vice versa}
+\newcommand{\FT}{\mathcal{F}}
+\newcommand{\IFT}{\mathcal{F}^{-1}}
+%\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\anged}[1]{\langle #1 \rangle}
+\newcommand{\grv}[1]{\grave{#1}}
+\newcommand{\asinh}{\sinh^{-1}}
+
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\morm}[1]{|\det #1 |}
+
+\newcommand{\galpha}{\grv{\alpha}}
+\newcommand{\gbeta}{\grv{\beta}}
+%\newcommand{\rnlessO}{\mb{R}^n \setminus \vec{0}}
+\usepackage{listings}
+
+\interfootnotelinepenalty=10000
+
+\newcommand{\sectionline}{%
+  \nointerlineskip \vspace{\baselineskip}%
+  \hspace{\fill}\rule{0.5\linewidth}{.7pt}\hspace{\fill}%
+  \par\nointerlineskip \vspace{\baselineskip}
+}
+
+\renewcommand{\labelenumii}{\roman{enumii})}
+
+
+\documentclass[12pt]{article}
+%\usepackage[final]{pdfpages}
+
+\usepackage{graphicx}
+\graphicspath{{/Users/kevinhayes/Documents/teaching/images/}}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\newcommand{\bbr}{\Bbb{R}}
+\newcommand{\zn}{\Bbb{Z}^n}
+
+%\usepackage{epsfig}
+%\usepackage{subfigure}
+\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{amsbsy}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{eurosym}
+%\usepackage{beamerarticle}
+\usepackage{txfonts}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+
+\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{2.0cm}{2.5cm}{16 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.3}
+
+
+\pagenumbering{arabic}
+\begin{document}
+
+%------------------------------------------------------%
+
+\section*{Complement of a Set}
+%(2.3.1) 
+Consider the universal set $U$ such that
+\[U=\{2,4,6,8,10,12,15\} \]
+For each of the sets $A$,$B$,$C$ and $D$, specify the complement sets.
+{
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Set &\phantom{sp} Complement \phantom{sp}\\
+\hline \phantom{sp} $A=\{4,6,12,15\}$ \phantom{sp} &
+$A^{\prime}=\{2,8,10\}$ \\ \hline $B=\{4,8,10,15\}$ & \\ \hline
+$C=\{2,6,12,15\}$ & \\ \hline $D=\{8,10,15\}$ & \\ \hline
+
+\end{tabular}
+\end{center}
+}
+
+
+
+
+\section{Differences and complements}
+
+
+\begin{itemize}
+\item If A and B are sets then the difference set A − B is the set of all elements
+of A which do not belong to B.
+\item If B is a sub-set of A, then A − B is sometimes called the complement of
+B in A. When A is the universal set one may simply refer to the
+complement of B to denote all things not in B. \item The complement of a set A
+is denoted as $A^c$ or $A^{c}$.
+\end{itemize}
+
+
+
+%--------------------------------------------------------%
+\subsubsection*{Complements}
+\begin{itemize}
+
+\item The Complements of A and B are the elements of the universal set not contained in A and B.
+
+\item The complements are denoted $\boldsymbol{A}^{c}$ and $\boldsymbol{B}^{c}$
+\[ \boldsymbol{A}^{c} = \{4,6,8,9\}, \]
+\[ \boldsymbol{B}^{c} = \{1,3,5,7,9\}, \]
+\end{itemize}
+
+
+%=========================================%
+\subsection{Complement of a Set}
+The complement of a set A (denoted by $A^{c}$) is the set of elements which are not in set A. Hence, $A^{c}={x|x \notin A}$.
+More specifically, $A^{c}=(U-A)$ where $U$ is a universal set which contains all objects.
+
+\subsection{Example} - If A={x|x belongstosetofoddintegers}A={x|x belongstosetofoddintegers} then $A^{c}={y|y \mbox{does not belong toset ofodd integers}}$
+
+Complement Set
+
+
+
+
+
+
+\section*{Complement of a Set}
+%(2.3.1) 
+Consider the universal set $U$ such that
+\[U=\{2,4,6,8,10,12,15\} \]
+For each of the sets $A$,$B$,$C$ and $D$, specify the complement sets.
+{
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+Set &\phantom{sp} Complement \phantom{sp}\\
+\hline \phantom{sp} $A=\{4,6,12,15\}$ \phantom{sp} &
+$A^{c}=\{2,8,10\}$ \\ \hline $B=\{4,8,10,15\}$ & \\ \hline
+$C=\{2,6,12,15\}$ & \\ \hline $D=\{8,10,15\}$ & \\ \hline
+
+\end{tabular}
+\end{center}
+}
+
+\end{document}
+
+
+ 
+
+

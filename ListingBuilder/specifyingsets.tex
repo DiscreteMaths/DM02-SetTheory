@@ -1,0 +1,271 @@
+
+\documentclass[12pt]{article}
+%\usepackage[final]{pdfpages}
+
+\usepackage{graphicx}
+\graphicspath{{/Users/kevinhayes/Documents/teaching/images/}}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\newcommand{\bbr}{\Bbb{R}}
+\newcommand{\zn}{\Bbb{Z}^n}
+
+%\usepackage{epsfig}
+%\usepackage{subfigure}
+\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{amsbsy}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{eurosym}
+%\usepackage{beamerarticle}
+\usepackage{txfonts}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+
+\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{2.0cm}{2.5cm}{16 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.3}
+
+
+\pagenumbering{arabic}
+
+\begin{document}
+\section{Discrete Maths - Logic Tutorial Sheet}
+
+%==================================================%
+
+\subsection{Notation - Listing Method}
+
+By convention, a set can be written by \textbf{listing} its elements, separated by commas, between {braces}. 
+
+Using the sets defined above:
+\begin{itemize}
+\item A = $\{1, 2, 3\}$
+\item B = $\{red, green, blue\}$
+\item C = $\{\}$
+\end{itemize}
+This is impractical for large sets (D), and impossible for infinite ones (E). 
+\subsection{Notation - Building Method}
+Thus a set can also be described by naming a particular property that is shared by all its elements and only by them. A common notation uses a bar (|) to separate a variable name (e.g. "x") from a property of the variable that elements of the set must have. For example:
+\begin{itemize}
+\item D = $\{x |$ x is a book and x is in the British Library $\}$
+\item E = $\{x |$ x is a positive integer$\}$
+\end{itemize}
+A simple translation of this notation is that "\textit{D is the set of all x, where x is a book and x is in the British Library}" or "\textit{E is the set of all x, where x is a positive integer}".
+
+%======================================================================== %
+
+
+
+\section*{Rules of Inclusion, Listing and Cardinality}
+For each of the following sets, a set is specified by the rules of inclusion method and listing method respectively. Also stated is the cardinality of that data set.
+\subsection*{Worked example 1}
+\begin{itemize}
+\item $\{ x : x $ is an odd integer $ 5 \leq x \leq 17 \}$
+\item $x = \{5,7,9,11,13,15,17\}$
+\item The cardinality of set $x$ is 7.
+\end{itemize}
+
+\subsection*{Worked example 2}
+\begin{itemize}
+\item $\{ y : y $ is an even integer $ 6 \leq y < 18 \}$
+\item $y = \{6,8,10,12,14,16\}$
+\item The cardinality of set $y$ is 6.
+\end{itemize}
+
+\subsection*{Worked example 3}
+A perfect square is a number that has a integer value as a
+square root. 4 and 9 are perfect squares ($\sqrt{4} = 2$,
+$\sqrt{9} = 3$).
+\begin{itemize}
+\item $\{ z : z $ is an perfect square $ 1 < z < 100 \}$
+\item $z = \{4,9,16,25,36,49,64,81\}$
+\item The cardinality of set $z$ is 8.
+\end{itemize}
+
+
+
+%===================================================================================== %
+\subsection*{Question 1}
+
+\begin{itemize}
+\item $\{ s :  \mbox{ s is an odd integer and } 2 \leq s \leq 10 \}$
+\item $\{ 2m :  m \in Z \mbox{ and }5 \leq m \leq 10 \}$
+\item $\{ 2^t :  t \in Z \mbox{ and } 0 \leq t \leq 5 \}$
+\end{itemize}
+
+
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|c|c|}
+%\hline n &  &{\color{white} space}  & {\color{white} space} &  &  \\ 
+%\hline 2n+1 &{\color{white} space}  &  &  & {\color{white} space} &{\color{white} space}  \\ 
+%\hline 
+%\end{tabular} 
+%\end{center}
+
+\newpage
+%=====================================================%
+\ssection{Roster or Tabular Form}
+The set is represented by listing all the elements comprising it. The elements are enclosed within braces and separated by commas.
+
+\begin{itemize}
+\item Example 1 : Set of vowels in English alphabet, $A=\{a,e,i,o,u\}$
+\item Example 2 : Set of odd numbers less than 10, $B=\{1,3,5,7,9\}$
+\end{itemize}
+%====================%
+\subsection{Set Builder Notation}
+The set is defined by specifying a property that elements of the set have in common. The set is described as A={x:p(x)}A={x:p(x)}
+Example 1 : The set {a,e,i,o,u}{a,e,i,o,u} is written as :
+
+\[A={x:x is a vowel in English alphabet}\]
+
+
+\begin{itemize}
+\item Specifying Sets
+\item Listing Method
+\item Rules of Inclusion method
+\end{itemize}
+%------------------------------------------------------------------------------------------------------ %
+\section{2.1 Specifying sets}
+%Learning Objectives
+\smallskip 
+When you have completed your study of this section, you should be able to:
+\begin{itemize}
+\item use set notation for specifying sets by the listing method and rules of inclusion method;
+\item use and interpret the standard symbols for special sets of numbers and for the empty set.
+\end{itemize}
+
+\smallskip 
+%---------------------------------------------------- %
+\subsection{2.1.1 Listing method}
+\smallskip 
+We usually use an upper case letter to denote a set and a lower case letter to denote a member of
+the set. To specify a set, we must describe its members in an unambiguous way. One way of doing
+this is to list the members of the set, separated by commas, and enclose the list in a pair of brace
+brackets.
+\smallskip 
+%--------------------------------------- %
+\smallskip 
+%Example 2.1 
+\begin{itemize}
+\item The set D of decimal digits can be expressed as
+\[D = {0, l,2,3,4,5,6,7,8,9}\]
+\item The set B of bits can be expressed as
+\[B= {0,1}\]. 
+\end{itemize}
+\smallskip 
+
+\subsection{2.1.2 Rules of inclusion method}
+\smallskip 
+\subsection{Rules of Inclusion}
+Another way of specifying a set is by giving rules of inclusion that distinguish members of the
+set from objects not in the set.
+
+Definition 2.3 The context of the problem in which u set arises determines an underlying set,
+called the universal set for the problem, from which the elements of the set will be drawn.
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+For example, if our subject is a set of leopards,~the universal set, explicitly stated or implied by the
+context, might be all wild animals in Africa or all animals in London Zoo or all animals belonging
+to the cat family.
+
+Example 2.4 To specify the set H of Example 2.3, we could write
+\[H=\{n \in Z : 1 \leq n \leq 100\} \]
+
+\smallskip 
+
+
+
+
+%------------------------------------------------------------------------%
+\begin{itemize}
+	\item[(i)] Describe the following set by the listing method
+	\[ \{ 2r+1 : r \in Z^{+} and r \leq 5  \} \]
+	\item[(ii)] Let A,B be subsets of the universal set U.
+	
+	
+\end{itemize}
+
+\section{Specifying Sets}
+
+
+
+\begin{enumerate}
+\item Listing Method
+\item Rules of Inclusion
+\end{enumerate}
+
+
+
+NOTATIONS FOR A SET:
+
+A set can be represented by two methods:
+1.ROSTER METHOD
+2.BUILDER METHOD
+ROSTER METHOD:
+
+In this method the elements of a set are separated by commas and are enclosed within curly brackets { }. For example:
+
+$A = {1, 2, 3, 4, 5, 6}$ is a set of numbers.
+
+B = {Sunny, Joy, Kartik, Harish, Girish} is a set of names.
+
+$C = {a, e, i, o, u}$ is a set of vowels.
+
+D = {apple, banana, guava, orange, pear} is a set of fruits.
+
+Listing the elements in this way is called Roster method. In this method, it is not necessary for the elements to be listed in a particular order. The elements of the set can be written just plainly, separated by commas and in any order.
+
+
+\section{BUILDER METHOD:}
+
+This method is also called Property method. In Builder method, a set is represented by stating all the properties which are satisfied by the elements of that particular set only.
+
+For example:
+\begin{itemize}
+\item If A is a set of elements less than 0, then in Builder method it will be written as
+
+$A = {x: x < 0}$, this statement is read as "the set of all x such that x is less than 0"
+
+\item If A is a set of all real numbers less than 7, then in Builder method it is written as $A = {x   R: x < 7}$
+\end{itemize}
+Similarly,
+
+$A = {2i: i is an integer}$ is a set of all even integers.
+
+$A = {x   R: x \neq 2}$ is a set of all real numbers except 2.
+
+$A = {x   R: x > 3 and x < 7}$ is a set of real numbers greater than 3 but less than 7.
+
+$A = {x   Z: x > 6}$ is a set of integers greater than 6.
+
+$A = {x   Z: 2x + 1}$ is a set of all odd integers.
+
+%-------------------------------------- %
+
+\begin{itemize}
+\item[\textbf{A}] $ \{ 2n : n \in \mathbb{Z^{+}} \} $
+\item[\textbf{B}] $ \{ 3,6,9,12,15,18,\ldots \} $
+\end{itemize}
+\textbf{Questions}
+\begin{itemize}
+\item[(i)] \textbf{A} is described by the rules of inclusion. Describe \textbf{A} with the listing method.
+\item[(ii)] \textbf{B} is described by the listing method. Describe \textbf{B} with the rules of inclusion. 
+\end{itemize}
+
+
+
+
+
+
+\end{document}

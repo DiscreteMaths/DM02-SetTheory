@@ -1,0 +1,50 @@
+
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\begin{document}
+
+% http://people.umass.edu/partee/NZ_2006/Set%20Theory%20Basics.pdf
+%http://webwhompers.com/set-theory.html
+\section{Set Theory}
+
+
+%---------------------------------------------------- %
+\section{Ordered Lists and Ordered Pairs}
+%---------------------------------------------------- %
+\begin{frame}
+\frametitle{Ordered Lists}
+%CHANGE EXAMPLE
+If we consider "the songs on my iPod" as a familiar example of a set, then "a playlist on my iPod" is the corresponding example of an ordered list. Key properties of ordered lists include:
+\begin{itemize}
+\item Order of elements in an ordered list is relevant.
+\item Repetition of elements in an ordered list is relevant.
+\end{itemize}
+
+Explicit notion for writing ordered lists is similar to that for sets; however, we use parentheses instead of curly braces. For example:
+\end{frame}
+%---------------------------------------------------- %
+\begin{frame}
+\begin{itemize}
+\item (1,2) is an ordered list that is different than (2,1)
+\item (1,1) is an ordered list that is different than (1)
+\end{itemize}
+From now on, expressions with parentheses "( , , , )" and expressions with curly braces "{ , , , }" have very distinct meanings!
+
+The length of an ordered list is, intuitively speaking, just like the number of songs in a playlist. For example:
+\end{frame}
+%---------------------------------------------------- %
+\begin{frame}
+The length of (1,10) is 2
+The length of (1,1,2,2) is 4
+An ordered pair is an ordered list of length two. We will use ordered pairs very often in our study of the Web; we will use longer ordered lists less often. Also, we will never attempt to define the cardinality of an ordered list. Sets have cardinality. Ordered lists have length.
+\end{frame}
+%---------------------------------------------------- %
+\begin{frame}
+Any element in an ordered list can itself be an ordered list or a set. Any object in a set can be a set or an ordered list. For example:
+{(1,2),(3,4)} is a set of two elements, each of which is an ordered pair. One of the elements of the set is (1,2) and the other element of the set is (3,4).
+({1,2},{3},{2,4}) is an ordered list of sets. The first element of the list is the set {1,2}; the second element of the list is the set {3}; the third element of the list is the set {2,4}.
+\end{frame}
+\end{document}

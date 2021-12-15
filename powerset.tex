@@ -1,0 +1,158 @@
+
+\documentclass[12pt]{article}
+%\usepackage[final]{pdfpages}
+
+\usepackage{graphicx}
+\graphicspath{{/Users/kevinhayes/Documents/teaching/images/}}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\newcommand{\bbr}{\Bbb{R}}
+\newcommand{\zn}{\Bbb{Z}^n}
+
+%\usepackage{epsfig}
+%\usepackage{subfigure}
+\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{natbib}
+\usepackage{amsbsy}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{eurosym}
+%\usepackage{beamerarticle}
+\usepackage{txfonts}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+
+\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{2.0cm}{2.5cm}{16 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.3}
+
+
+\pagenumbering{arabic}
+
+\begin{document}
+
+\subsection{Power Set}
+Power set of a set S is the set of all subsets of S including the empty set. The cardinality of a power set of a set S of cardinality n is $2^n$. Power set is denoted as $P(S)$.
+
+Example 
+
+For a set $S={a,b,c,d}$ let us calculate the subsets 
+
+\begin{itemize}
+\item Subsets with 0 elements : $\{ \varnothing\}$ (the empty set)
+\item Subsets with 1 element : {a},{b},{c},{d}
+\item Subsets with 2 elements : {a,b},{a,c},{a,d},{b,c},{b,d},{c,d}
+\item Subsets with 3 elements : {a,b,c},{a,b,d},{a,c,d},{b,c,d}
+\item Subsets with 4 elements : {a,b,c,d}
+\end{itemize}
+
+Hence, \[P(S)=
+{{\varnothing},{a},{b},{c},{d},{a,b},{a,c},{a,d},{b,c},{b,d},{c,d},{a,b,c},{a,b,d},{a,c,d},{b,c,d},{a,b,c,d}}\]
+\[|P(S)|=2^4=16\]
+Note: The power set of an empty set is also an empty set.
+
+$|P({\varnothing})|=2^0=1$
+\medskip
+
+\textbf{Power set}
+
+The power set of X, $P(X)$, is the set whose elements are all the subsets of X. Thus \[P(A) = \{ \{\}, \{1\}, \{2\}, \{3\}, \{1,2\}, \{1,3\}, \{2,3\}, \{1,2,3\}\}.\] The power set of the empty set $P(\{\})$ = $\{\{\}\}$. 
+
+Note that in both cases the cardinality of the power set is strictly greater than that of base set: No one-to-one correspondence exists between the set and its power set. 
+
+%Cantor proved that this in fact holds for any set (Cantor's Theorem). This is obvious for a finite set, but Cantor's ingenious proof made no reference to the set being finite; the theorem holds even for infinite sets. This was a powerful generalisation of his previous discovery that different sizes of infinity exist.
+
+
+
+
+\subsubsection*{Power Sets}
+
+\begin{itemize}
+
+\item Consider the set A where $ A = \{w,x,y,z\}$
+\item There are 4 elements in set A.
+
+\item The power set of A contains 16 element data sets.
+
+%Complete this
+ \[  \mathcal{P}(A) = \{\{ x \}, \{ y \} \{\{ x,y \}, \{ w,y \}\}  \]
+
+\item (i.e. 1 null set, 4 single element sets, 6 two -elements sets, 4 three element set and 1 four element set.)
+
+\end{itemize}
+
+%-------------------------------------------------% 
+
+\section*{Power Sets}
+\subsection*{Worked Example}
+Consider the set $Z$:
+\[ Z = \{ a,b,c\}  \]
+\begin{itemize}
+\item[Q1] How many sets are in the power set of $Z$? 
+\item[Q2] Write out the power set of $Z$. 
+\item[Q3] How many elements are in each element set?
+\end{itemize}
+%----------------------------------------------%
+\subsection*{Solutions to Worked Example}
+
+\begin{itemize}
+
+
+\item[Q1] There are 3 elements in $Z$. So there is $2^3 = 8$ element sets contained in the power set.
+
+\item[Q2] Write out the power set of $Z$.
+\[ \mathcal{P}(Z) = \{ \{0\}, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\} \]
+
+\item[Q3]
+\begin{itemize}
+\item[*] One element set is the null set - i.e. containing no
+elements \item[$\bullet$] Three element sets have only elements \item[$\bullet$]
+Three element sets have two elements \item[$\bullet$] One element set
+contains all three elements \item[$\bullet$] 1+3+3+1=8
+\end{itemize}
+\end{itemize}
+\subsection*{Exercise}
+For the set $Y = \{u,v,w,x\}$ , answer the questions from the
+previous exercise
+
+
+
+\subsection{Partitioning of a Set}
+Partition of a set, say S, is a collection of n disjoint subsets, say $P1,P2 \ldots Pn$  that satisfies the following three conditions :
+
+\begin{enumerate}
+\item $Pi$ does not contain the empty set.
+
+ $[Pi \neq {\varnothing} for all 0<i\leq n]$
+\item The union of the subsets must equal the entire original set.
+
+\[P1 \cup P2 \cup \ldots \cup Pn=S\]
+\item The Intersection of any two distinct sets is empty.
+
+\[Pa \cap Pb={\varnothing}, for a\neq b where n\geq a,b\geq 0\]
+\end{enumerate}
+
+%--------------------------------------------------------%
+
+
+
+\subsubsection*{Example}
+
+Let $S={a,b,c,d,e,f,g,h}$
+\begin{itemize}
+\item One probable partitioning is ${a},{b,c,d},{e,f,g,h}$
+\item Another probable partitioning is ${a,b},{c,d},{e,f,g,h}$
+\end{itemize}
+%-------------------------------------------------% 
+
+
+\end{document}

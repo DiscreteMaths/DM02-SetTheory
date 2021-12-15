@@ -1,0 +1,231 @@
+\documentclass[11pt,a4paper,titlepage,oneside,openany]{article}
+
+\pagestyle{plain}
+%\renewcommand{\baselinestretch}{1.7}
+
+\usepackage{setspace}
+%\singlespacing
+\onehalfspacing
+%\doublespacing
+%\setstretch{1.1}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{framed}
+\usepackage{multicol}
+
+\usepackage[margin=3cm]{geometry}
+\usepackage{graphicx,psfrag}%\usepackage{hyperref}
+\usepackage[small]{caption}
+\usepackage{subfig}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+\usepackage{varioref} %NB: FIGURE LABELS MUST ALWAYS COME DIRECTLY AFTER CAPTION!!!
+%\newcommand{\vref}{\ref}
+
+\usepackage{index}
+\makeindex
+\newindex{sym}{adx}{and}{Symbol Index}
+%\newcommand{\symindex}{\index[sym]}
+%\newcommand{\symindex}[1]{\index[sym]{#1}\hfill}
+\newcommand{\symindex}[1]{\index[sym]{#1}}
+
+%\usepackage[breaklinks,dvips]{hyperref}%Always put after varioref, or you'll get nested section headings
+%Make sure this is after index package too!
+%\hypersetup{colorlinks=false,breaklinks=true}
+%\hypersetup{colorlinks=false,breaklinks=true,pdfborder={0 0 0.15}}
+
+
+%\usepackage{breakurl}
+
+\graphicspath{{./images/}}
+
+\usepackage[subfigure]{tocloft}%For table of contents
+\setlength{\cftfignumwidth}{3em}
+
+\input{longdiv}
+\usepackage{wrapfig}
+
+
+%\usepackage{index}
+%\makeindex
+%\usepackage{makeidx}
+
+%\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+
+%\usepackage{fullpage}
+
+%Compulsory packages for the PhD in UL:
+%\usepackage{UL Thesis}
+\usepackage{natbib}
+
+%\numberwithin{equation}{section}
+\numberwithin{equation}{section}
+\numberwithin{algorithm}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+%\newcommand{\vec}[1]{\ensuremath{\math{#1}}}
+
+%\linespread{1.6} %for double line spacing
+
+\usepackage{afterpage}%fingers crossed
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{defin}{Definition}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+
+%\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mu d}}
+\newcommand{\dbar}{{\mkern+3mu\mathchar'26\mkern-12mud}}
+
+\newcommand{\bbSigma}{{\mkern+8mu\mathsf{\Sigma}\mkern-9mu{\Sigma}}}
+\newcommand{\thrfor}{{\Rightarrow}}
+
+\newcommand{\mb}{\mathbb}
+\newcommand{\bx}{\vec{x}}
+\newcommand{\bxi}{\boldsymbol{\xi}}
+\newcommand{\bdeta}{\boldsymbol{\eta}}
+\newcommand{\bldeta}{\boldsymbol{\eta}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bnu}{\boldsymbol{\nu}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\bdiff}{\boldsymbol{\partial}}
+
+\newcommand{\tomega}{\widetilde{\omega}}
+\newcommand{\tbdeta}{\widetilde{\bdeta}}
+\newcommand{\tbxi}{\widetilde{\bxi}}
+
+
+
+\newcommand{\wv}{\vec{w}}
+
+\newcommand{\ie}{i.e. }
+\newcommand{\eg}{e.g. }
+\newcommand{\etc}{etc}
+
+\newcommand{\viceversa}{vice versa}
+\newcommand{\FT}{\mathcal{F}}
+\newcommand{\IFT}{\mathcal{F}^{-1}}
+%\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\anged}[1]{\langle #1 \rangle}
+\newcommand{\grv}[1]{\grave{#1}}
+\newcommand{\asinh}{\sinh^{-1}}
+
+\newcommand{\sgn}{\text{sgn}}
+\newcommand{\morm}[1]{|\det #1 |}
+
+\newcommand{\galpha}{\grv{\alpha}}
+\newcommand{\gbeta}{\grv{\beta}}
+%\newcommand{\rnlessO}{\mb{R}^n \setminus \vec{0}}
+\usepackage{listings}
+
+\interfootnotelinepenalty=10000
+
+\newcommand{\sectionline}{%
+  \nointerlineskip \vspace{\baselineskip}%
+  \hspace{\fill}\rule{0.5\linewidth}{.7pt}\hspace{\fill}%
+  \par\nointerlineskip \vspace{\baselineskip}
+}
+
+\renewcommand{\labelenumii}{\roman{enumii})}
+
+\begin{document}
+
+
+\section*{Venn Diagrams}
+
+Draw a Venn Diagram to represent the universal set
+$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets:\\
+$A = \{2,4,5\}$\\
+$B = \{1,4,5,6\}$\\
+
+\noindent Find each of the following
+\begin{itemize}
+\item[(a)] $A \cup B $
+\item[(b)] $A \cap B $
+\item[(c)] $A-B$
+\item[(d)] $B-A$
+\item[(e)] $A \oplus B$
+\end{itemize}
+\newpage
+
+
+
+76 Management mathematics
+%------------------------------------------------------------------------- %
+
+\section{1.7 Venn diagrams}
+Often the relationships that exist between sets can best be shown using a
+Venn diagram. To construct a Venn diagram we let a certain region, usually
+a rectangle, represent the universal set.
+
+This rectangle is often implied
+by the constraints of the page and only in those circumstances where its
+boundary is important is the rectangle drawn (see the diagrams below for
+example). Individual sets are then represented by regions, often circles,
+within this rectangle. One can then easily depict intersections, unions,
+complements, etc. on the diagram. For example:
+%==================================================%
+
+\begin{itemize}
+\item Let $A$,$B$ and $C$ be subsets of a universal set $U$.
+\item Draw a labelled Venn diagram depicting $A$,$B$,$C$ in such a way that they divide $U$ into 8 disjoint regions.
+\end{itemize}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline Region & A & B & C &  \\
+\hline 1 &\phantom{sp} No \phantom{sp}&\phantom{sp} No\phantom{sp} & \phantom{sp} No \phantom{sp} &  \\
+\hline 2 & Yes & No & No &  \\
+\hline 3 & No & Yes & No &  \\
+\hline 4 & Yes & Yes & No &  \\
+\hline 5 & No & No & Yes &  \\
+\hline 6 & Yes & No & Yes &  \\
+\hline 7 & No & Yes & Yes &  \\
+\hline 8 & Yes & Yes & Yes & $A \cap B \cap C$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline Region & A & B & C &  \\
+\hline 1 &\phantom{sp} No \phantom{sp}&\phantom{sp} No\phantom{sp} & \phantom{sp} No \phantom{sp} &  \\
+\hline 2 & Yes & No & No &  \\
+\hline 3 & No & Yes & No &  \\
+\hline 4 & Yes & Yes & No &  \\
+\hline 5 & No & No & Yes &  \\
+\hline 6 & Yes & No & Yes &  \\
+\hline 7 & No & Yes & Yes &  \\
+\hline 8 & Yes & Yes & Yes & $A \cap B \cap C$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline Region & A & B & C &  \\
+\hline 1 &\phantom{s} No \phantom{s}&\phantom{s} No\phantom{s} & \phantom{s} No \phantom{s} & $(A \cup B \cup C)^C$  \\
+\hline 2 & Yes & No & No &  \\
+\hline 3 & No & Yes & No &  $B-(A \cap C)$\\
+\hline 4 & Yes & Yes & No & $(A \cap B) - C$ \\
+\hline 5 & No & No & Yes &  $C-(A \cap B)$ \\
+\hline 6 & Yes & No & Yes & $(A \cap C) - B$ \\
+\hline 7 & No & Yes & Yes & $(B \cap C) - A$ \\
+\hline 8 & Yes & Yes & Yes & $A \cap B \cap C$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{document}

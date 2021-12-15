@@ -1,0 +1,179 @@
+%------------------------------------------------------------------------%
+\section{Special Mathematical Functions}
+\subsection{Mathematical Operators}
+\begin{itemize}
+\item The Square Root function
+\item The Floor and Ceiling functions
+\item The Absolute Value functions
+\end{itemize}
+
+
+\begin{itemize}
+\item Root Functions
+\item Absolute Value Function
+\item Floor Function
+\item Ceiling Function
+\end{itemize}
+{
+
+\begin{eqnarray}
+\lfloor 3.14 \rfloor =& 3 \\
+\lceil -4.5 \rceil =& -5 \\
+| -4 | =&  4
+\end{eqnarray}
+}
+For this course, only positive numbers have square roots. The square roots are positive numbers. (This statement is not strictly true. The square root of a negative number is called a complex number. However this is not part of the course).
+
+Negative numbers can have cube roots
+
+{
+\[ -27 = -3 \times -3 \times -3 \qquad \]
+\LARGE
+\[ \sqrt[3]{-27} = -3 \]
+}
+
+
+
+%--------------------------------------------%
+\subsection*{Exponential and Logarithms}
+
+\textbf{Rules}\\
+Expontials : Rules 4.18 Page 58 \\
+Logarithms : Rules 4.23 Page 61 \\
+
+\[ log_a(a) = 1 \]
+\[ log_a(b^c) = c \times log_a(b) \]
+
+\begin{itemize}
+\item $log_2(128) = 7$
+\item $log_2(1/4) = -2$
+\item $log_2(2) = 1$
+\end{itemize}
+
+\[ log_a(b) = \frac{log_x(b)}{log_x(a)} \]
+
+%------------------------------------------------------%
+\subsection{Logarithms} 
+- Laws of Logarithms
+- Change of Base
+
+\[ \mbox{Log}_b(x) = a \] \[b^a = x \]
+\[ \mbox{Log}_2(8) = 3 \] \[2^3 = 8 \]
+
+\[ \mbox{Log}_b(x) \times \mbox{Log}_b(y) =  \mbox{Log}_b(x+y) \]
+\[ \mbox{Log}_b(x^y) =  y \times \mbox{Log}_b(x) \]
+
+\[ \mbox{Log}_y(x)  =  \frac{ \mbox{Log}_b(x) }{ \mbox{Log}_b(y) } \]
+%------------------------------------------------------%
+\subsection{Exponents}
+- Rules of Exponents
+
+\[ (a^b)^c = a^{b \times c}\]
+
+\[ 64^{2/3} =  (4^3)^{2/3} = 4^{3\times2/3} = 4^2 = 16 \]
+
+
+\[ (a^b) \times (a^c) = a^{b+c}\]
+\[ (3^2) \times (3^3) = 3^{2+3} = 3^5  =243 \]
+
+%---------------------------------------------------------%
+\subsection{Exponentials Functions}
+
+\[ e^a \times e^b = e^{a+b}\]
+
+\[ (e^a )^b = e^{ab}\]
+%---------------------------------------------------------%
+\subsection{Logarithmic Functions}
+
+\subsubsection{Laws for Logarithms}
+The following laws are very useful for working with logarithms.
+\begin{enumerate}
+\item $\mbox{log}_b(X)$ + $\mbox{log}_b(Y)$ = $\mbox{log}_b(X\times Y)$
+\item $\mbox{log}_b(X)$ - $\mbox{log}_b(Y)$ = $\mbox{log}_b(X / Y)$
+\item $\mbox{log}_b(X^Y)$= $Y \mbox{log}_b(X)$
+\end{enumerate}
+
+\noindent \textbf{Question1.3} Compute the Logarithm of the following
+\begin{itemize}
+\item $\mbox{log}_2(8)$
+\item $\mbox{log}_2(\sqrt{128})$
+\item $\mbox{log}_2(64)$
+\item $\mbox{log}_5(125)$ +   $\mbox{log}_3(729)$
+\item $\mbox{log}_2(64/4)$
+\end{itemize}
+
+%----------------------------------------------------------------%
+
+\begin{itemize}
+\item $a^x = y$  $log_a(y) = x$
+
+\item $e^x = y$  $ln(y)=x$
+
+\item $log_a(x\times y) = log_a(x) + log_a(y)$
+
+\item $log_a(\frac{x}{y}) = log_a(x) - log_a(y)$
+
+\item $log_a(\frac{1}{x}) = - log_a(x)$
+
+\item $log_a(a) = 1$
+
+\item $log_a(1) = 0$
+\end{itemize}
+
+
+\begin{itemize}
+\item $\lceil x\rceil$
+
+\item $\lfloor x\rfloor$
+\end{itemize}
+
+\begin{tabular}{|c|c|c|c|}
+\hline Sample value x & Floor $\lfloor x\rfloor$ & Ceiling  $\lceil x\rceil$ & Fractional part $ \{ x \} $\\
+12/5 = 2.4 &2&3&2/5 = 0.4\\
+2.7&2&3&0.7\\
+-2.7&-3&-2&0.3\\
+-2&-2&-2&0\\
+\hline 
+\end{tabular} 
+
+%---------------------------------------------------------%
+\subsection{Precision Functions}
+
+\begin{itemize}
+\item Absolute Value Function $| x |$
+\item Ceiling Function $\lceil x \rceil$
+\item Floor Function  $\lfloor x \rfloor $
+\end{itemize}
+%\[ \lfloorx\rfloor\]
+
+\noindent \textbf{Question1.2}: State the range and domain of the following function
+\[ F(x) = \lfloor x-1 \rfloor \]
+%---------------------------------------------------------%
+\subsection{Powers}
+
+\[  2^ 4 = 2 \times 2 \times 2 \times 2 = 16 \]
+
+\[  5^ 3 = 5 \times 5 \times 5 =125 \]
+
+\subsubsection{Special Cases}
+
+Anything to the power of zero is always 1
+
+\[  X^ 0 = 1 \mbox{ for all values of X} \]
+
+Sometimes the power is a negative number.
+
+\[  X^{-Y} = { 1 \over X^Y}  \]
+
+Example 
+\[  2^{-3} = { 1 \over 2^3} = { 1 \over 8}  \]
+
+%---------------------------------------------------------%
+\subsection{Precision Functions}
+
+\begin{itemize}
+\item Absolute Value Function $| x |$
+\item Ceiling Function $\lceil x \rceil$
+\item Floor Function  $\lfloor x \rfloor $
+\end{itemize}
+%\[ \lfloorx\rfloor\]

@@ -1,0 +1,520 @@
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{eurosym}
+\usepackage{vmargin}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{fancyhdr}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2570}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{LastRevised=Wednesday, February 23, 2011 13:24:34}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+\pagestyle{fancy}
+\setmarginsrb{20mm}{0mm}{20mm}{25mm}{12mm}{11mm}{0mm}{11mm}
+\lhead{Hibernia College} \rhead{Kevin O'Brien}
+\chead{Mathematics for Computing Part 2 Sheet A}
+%\input{tcilatex}
+
+\begin{document}
+
+a
+
+%--------------------
+%--------------------
+
+
+%--------------------2011 Question 2a 
+
+
+Let the two sets A and B be given as
+
+$ A =\{ 3, 1/3, \pi \}$
+$ B =\{ x \in Q : x \notin Z   \}$
+
+Let us look at the elements of A
+
+3 (\in N ) \in Z \in Q \in R
+1/3 \in  Q in R
+\pi in R
+
+B is constructed using the builder method
+An real number that is not an integer is an element of B
+i.e. 2.45 is an element of B, but 2 and 3 are not.
+
+Questions
+$A \cap Q$: 3 and 1/3 are in Q, but $\pi$ is not.
+
+$A \cap R$: All three members of A are also members of R
+
+$A \cap B$: $ 1/3$ and $\pi$ are elements of both A and B.
+
+$A-B$: This describes the elements of A that are not also in B. From the previous question, we can see that this is 3 only.
+
+
+
+
+%------------------------------------------------------------------------------------%
+
+If U = {2, 3, 4, 7, 9, 10, 11, 13} and A = {3, 4, 9, 10}
+
+Then
+
+Compliment of A = A’	 = U - A
+= {2, 3, 4, 7, 9, 10, 11, 13} – {3, 4, 9, 10}
+= {2, 7, 11, 13}
+
+%------------------------------------------------------------------------------------%
+UNIVERSAL SET:
+
+A universal set is a set of all elements under consideration. It is denoted by U. A Universal set is always a non-empty set.
+
+For example: The set of real numbers R is a universal set for the operations related to real numbers.
+
+Example:
+
+Given that U = {5, 6, 7, 8, 9, 10, 11, 12}, list the elements of the following sets.
+A = {x : x is a prime number}
+B = {x : x is a factor of 60}
+Solution:
+
+The elements of sets A and B can only be selected from the given universal set U
+A = {5, 7, 11}
+B = {5, 6, 10, 12}
+
+%------------------------------------------------------------------------------------%
+MUTUALLY EXCLUSIVE SETS OR DISJOINT SETS:
+
+Two sets are called disjoint if they don't have any common element.
+
+For example, A = {2, 3, 4} and B = {5, 6, 7} are disjoint sets.
+
+
+\section*{Complement of a Set}
+%(2.3.1)
+Consider the universal set $U$ such that
+\[U=\{2,4,6,8,10,12,15\} \]
+For each of the sets $A$,$B$,$C$ and $D$, specify the complement sets.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+  \hline
+Set & Complement\\
+\hline $A=\{4,6,12,15\}$ &
+$A^{\prime}=\{2,8,10\}$ \\ \hline $B=\{4,8,10,15\}$ & \\ \hline
+$C=\{2,6,12,15\}$ & \\ \hline $D=\{8,10,15\}$ & \\ \hline
+
+\end{tabular}
+\end{center}
+%-------------------------------------%
+ % Binary Operations on Sets (2.3.2)
+ % Union , Intersection, Symmetric Difference
+ % Set Difference
+
+
+
+\section*{Set Operations}
+Consider the universal set $U$ such that
+\[U=\{1,2,3,4,5,6,7,8,9\} \]
+and the sets
+\[A=\{2,5,7,9\} \]
+\[B=\{2,4,6,8,9\} \]
+
+\begin{itemize}
+\item[(a)] $A-B$
+\item[(b)] $A \otimes B$
+\item[(c)] $A \cap B$
+\item[(d)] $A \cup B$
+\item[(e)] $A^{\prime} \cap B^{\prime}$
+\item[(f)] $A^{\prime} \cup B^{\prime}$
+\end{itemize}
+
+
+\section*{Venn Diagrams}
+
+Draw a Venn Diagram to represent the universal set
+$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets
+$A = \{2,4,5\}$
+$B = \{1,4,5,6\}$
+
+Find each of the following
+\begin{itemize}
+\item[(a)] $A \cup B $
+\item[(b)] $A \cap B $
+\item[(c)] $A-B$
+\item[(d)] $B-A$
+\item[(e)] $A \otimes B$
+\end{itemize}
+
+\newpage
+\subsection*{Conversion to Binary Form}
+\[
+\begin{tabular}{|c|c|c|c|}
+	&		&	Quotient	&	Remainder	\\
+507	&\emph{	253.5	}&	253	&	1	\\
+253	&\emph{	126.5	}&	126	&	1	\\
+126	&\emph{	63	}&	63	&	0	\\
+63	&\emph{	31.5	}&	31	&	1	\\
+31	&\emph{	15.5	}&	15	&	1	\\
+15	&\emph{	7.5	}&	7	&	1	\\
+7	&\emph{	3.5	}&	3	&	1	\\
+3	&\emph{	1.5	}&	1	&	1	\\
+1	&\emph{	0.5	}&	0	&	1	\\
+\end{tabular} \]
+
+Correct Answer : 111111011
+
+
+2011 Question 1C
+
+List all the set of positive integers with precisely 3 bits in binary notation
+
+\[\begin{array}{|c|c|}
+100 & 4 \\
+101 & 5 \\
+110 & 6 \\
+111 & 7 \\
+\end{array}\]
+
+Let n be a positive integer. How many positive integers have precisely n bits in binary notation. 
+
+\newpage
+Express the binary number (1011.011) as a decimal, showing all of your working
+\[\begin{tabular}{|c|c|c|c|}
+Digit	&	Power	&	Weight	&		\\
+1	&	3	&	2^{3} = 8	&	8	\\
+0	&	2	&	2^{2} =4	&	0	\\
+1	&	1	&	2^{1}=2	&	2	\\
+1	&	0	&	2^{0}=1	&	1	\\
+.	&	.	&	.	&	.	\\
+0	&	-1	&	2^{-1}=0.5	&	0	\\
+1	&	-2	&	2^{-1}=0.25	&	0.25	\\
+1	&	-3	&	2^{-3}=0.125	&	0.125	\\
+	&		&		&	11.375	\\
+\hline 
+\end{tabular} \]
+
+
+
+
+
+\newpage
+\subsection*{2011 Question 1b}
+
+Working in Binary, and showing all carries, compute the following:\\
+$(11010)_{2} + (111)_{2}$ (i.e. $(26)_10 +7_{10}$)
+\\
+(Demonstration on whiteboard)
+\\
+Answer: 11010 + 111 = 100001
+\\
+
+
+\begin{itemize} 
+\item Remark 0 is not a positive integer.
+\item How many have 1 bit : Answer only one 1.
+\item How many have 2 bits :  Answer only two : 10 and 11 (i.e. 2 and 3 in decimal)
+\item From above: 4 have 3 bits.
+\item What is the first 4 bit numbers? : 1000 (i.e 8 in decimal)
+\item What is the last 4 bit number? 1111 (i.e 15 in decimal)
+\item How many numbers have 4 bits? Answer :8
+\item Answer to question: $2^{n-1}$
+\item Return to this after "Proof by Induction".
+\end{itemize}
+\newpage
+
+\subsection*{Hexadecimal}
+\begin{itemize}
+\item Hexadecimal basic concepts:	
+\item Hexadecimal is base 16.  
+\item There are 16 digits in counting (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F)
+\item When you reach 16, you carry a “1” over to the next column
+\item The number after F (decimal 15) is 10 in hex (or 16 in decimal)
+\end{itemize}
+%---------------------------------------------------------
+
+\begin{tabular}{|c||c|c|c|c|c|c|}
+\hline Hex & A & B  & C & D & E & F \\  \hline
+\hline Dec & 10 & 11 & 12 & 13  &14  &15  \\  \hline
+\hline 
+\end{tabular} 
+
+\textbf{Conversion to Decimal}
+\[\textbf{5} \times 16^2 + \textbf{A} \times 16^1  + \textbf{9} \times 16^0\]
+\[=5 \times 16^2 + 10 \times 16^1  + 9 \times 16^0\]
+\[= 1280 + 160 + 9\]
+
+
+% Use the following steps to perform hexadecimal addition:
+
+\subsection*{Hexadecimal Addition}
+\begin{itemize}
+\item		Add one column at a time.
+
+\item		Convert to decimal and add the numbers.
+
+\item	If the result of step two is 16 or larger subtract the result from 16 and carry 1 to the next column.
+
+\item	If the result of step two is less than 16, convert the number to hexadecimal.
+
+\end{itemize}
+
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	5	&	A	&	9	\\	
+	-&	6	&	9	&	4	\\	\hline
+	&		&		&		\\	
+\end{array}\]
+
+\subsection*{Hexadecimal Addition}
+\begin{itemize}
+\item		Add one column at a time.
+
+\item		Convert to decimal and add the numbers.
+
+\item	If the result of step two is 16 or larger subtract the result from 16 and carry 1 to the next column.
+
+\item	If the result of step two is less than 16, convert the number to hexadecimal.
+
+\end{itemize}
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	5	&	A	&	9	\\	
+	+&	6	&	9	&	4	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+\noindent 1. Add one column at a time\\
+2. Convert to decimal and add (9 + 4 = 13)\\
+3. Decimal 13 is hexadecimal D\\
+4. Next column :Convert to decimal and add (10 + 9 = 19)\\
+5. (19 larger than 16) 14 in Hexadecimal \\
+6. Leave 4 carry to one\\
+7.  Next Colulm add 1 + 5 + 6 = 12)\\
+8. Decimal 12 is hexadecimal C\\
+
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	5	&	A	&	9	\\	
+	+&	6	&	9	&	4	\\	\hline
+	&	C	&	4	&	D	\\	
+\end{array} \]
+
+\subsection*{Hexadecimal Subtraction}
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	B	&	B	&	B	\\	
+	-&	A	&	5	&	D	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+
+\[\begin{array}{cccc}
+	&		&		&		\\	
+	&	B	&	\textbf{\emph{A}}	&	\textbf{\emph{1B}}	\\	
+	&	A	&	5	&	D	\\	\hline
+	&		&		&		\\	
+\end{array} \]
+
+
+\newpage
+\begin{verbatim}
+If U = {2, 3, 4, 7, 9, 10, 11, 13} and A = {3, 4, 9, 10}
+
+Then
+
+Compliment of A = A’	 = U - A
+= {2, 3, 4, 7, 9, 10, 11, 13} – {3, 4, 9, 10}
+= {2, 7, 11, 13}
+
+\begin{verbatim}
+UNIVERSAL SET: 
+
+A universal set is a set of all elements under consideration. It is denoted by U. 
+A Universal set is always a non-empty set.
+
+For example: The set of real numbers R is a universal set
+for the operations related to real numbers.
+
+Example: 
+
+Given that U = {5, 6, 7, 8, 9, 10, 11, 12}, list the elements of the following sets. 
+A = {x : x is a prime number}
+B = {x : x is a factor of 60}
+Solution: 
+
+The elements of sets A and B can only be selected 
+from the given universal set U 
+A = {5, 7, 11}
+B = {5, 6, 10, 12}
+\end{verbatim}
+
+\newpage
+\begin{verbatim}
+MUTUALLY EXCLUSIVE SETS OR DISJOINT SETS: 
+
+Two sets are called disjoint if they don't have any common element. 
+
+For example, A = {2, 3, 4} and B = {5, 6, 7} are disjoint sets.
+
+\end{verbatim}
+
+\end{document}
+
+
+
+
+
+
+
+
+%-------------------------------------% Ellipsis
+
+When using Ellipsis, it should be clear what the pattern is
+
+%-------------------------------------%
+
+
+%-----------Reference to section 2.2.3 Power Sets
+
+
+
+
+%-------------------------------------%
+
+ %----(Reference to Section 2.2.2 Cardinality)
+
+
+
+%-------------------------------------% % Complement of a set
+
+
+%--------------------------------------%
+\subsection*{ Three Sets }
+
+%- Section 2.3.5 %- Associative Law %- Distribution Law
+
+
+
+
+
+%-------------------------------------% %- Section 3
+Propositional Logic A statement is a declarative sentence that
+is either true or false.
+\begin{itemize}
+\item $\tilde q$ not q \item $p \vee q$ \item $p \wedge \tilde
+q$
+\end{itemize}
+
+%-------------------------------%
+------------------------------------------------
+Question 1
+
+
+$\{ s :  s is an odd integer and 2 \leq s \leq 10 \}$
+$\{ 2m :  m \element Z and 5 \leq m \leq 10 \}$
+$\{ 2^t :  t \element Z and 0 \leq t \leq 5 \}$
+
+------------------------------------------------
+Question 2
+
+\{12,13,14,15,16,17\}
+{0,5,-5,10,-10,15,-15,.....\}
+{6,8,10,12,14,16,18\}
+Question 5
+
+-----------------------------------------------------
+
+
+--------------------------------------------
+
+Let A, B be subsets of the universal set \mathcal{U}.
+
+Use membership tables to prove De Morgan's Laws.
+
+---------------------------------------------
+Draw a venn diagram to show three subsets A,B and C of a universal set U intersecting in
+the most general way?
+How are sets $X$ and $Z$ related?
+Can you describe each of the subsets X,Y and Z in terms  of the
+sets A,B,C using the operations union intersection and set complement.
+
+Construct Membership tables for each of the sets
+(A-B) - C
+A-(B- C)
+
+(A-B) -C = A-(B-C)
+A
+
+
+
+\begin{itemize}
+\item[a.] (1 mark) Write out the sample space for the outcomes for both players A and B.
+\item[b.] (1 mark) Write out the sample space for the outcomes of C, where C is the difference of the two scores (i.e. B-A)
+\item[c.] (1 mark) Are the sample points for the sample space of C equally probable? Provide a brief justification for your answer.
+\end{itemize}
+
+%----------------------------------------------------------%
+\newpage
+\section*{Section B: Set Operations}
+\begin{itemize}
+\item[B.1] complement of A $A^{\prime}$
+\item[B.2] Union $A \cup B$
+\item[B.3] Intersection $A \cap B$
+\item[B.4] Relative Difference $A \otimes B$
+\item[A.5]
+\item[A.6]
+\item[A.7]
+\item[A.8]
+\end{itemize}
+\newpage
+
+
+\begin{itemize}
+\item Specifying Sets
+\item Listing Method
+\item Rules of Inclusion method
+\end{itemize}
+
+
+\begin{itemize}
+\item Subsets Notation of a subset
+\item Cardinality of a set
+\item Power of a set
+\end{itemize}
+
+\subsection*{Operation on Sets}
+
+\begin{itemize}
+\item The complement of Set
+\item Binary Operations
+\begin{itemize}
+\item Union
+\item Intersection
+\end{itemize}
+\item Membership tables
+\item Laws for Combining Sets
+\end{itemize}
+
+
+%----------------------------------------------------------%
+\section*{Section C: Real and Rational Numbers}
+\begin{itemize}
+\item[C.1]
+\item[C.2]
+\item[C.3]
+\item[C.4]
+\item[C.5]
+\item[C.6]
+\item[C.7]
+\item[C.8]
+\end{itemize}
+
+
+\end{document} 

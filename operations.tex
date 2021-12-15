@@ -1,0 +1,319 @@
+
+\documentclass[12pt]{article}
+%\usepackage[final]{pdfpages}
+
+\usepackage{graphicx}
+\graphicspath{{/Users/kevinhayes/Documents/teaching/images/}}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\newcommand{\bbr}{\Bbb{R}}
+\newcommand{\zn}{\Bbb{Z}^n}
+
+%\usepackage{epsfig}
+%\usepackage{subfigure}
+\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{multicol}
+\usepackage{natbib}
+\usepackage{amsbsy}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{eurosym}
+%\usepackage{beamerarticle}
+\usepackage{txfonts}
+\usepackage{fancyvrb}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+
+\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{2.0cm}{2.5cm}{16 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.3}
+
+
+\pagenumbering{arabic}
+
+\begin{document}
+
+%--------------------------------------------------------%
+\subsubsection*{Complements}
+\begin{itemize}
+
+\item The Complements of A and B are the elements of the universal set not contained in A and B.
+
+\item The complements are denoted $\mathcal{A}^{c}$ and $\mathcal{B}^{c}$
+\[ \mathcal{A}^{c} = \{4,6,8,9\}, \]
+\[ \mathcal{B}^{c} = \{1,3,5,7,9\}, \]
+
+\end{itemize}
+
+
+%--------------------------------------------------------%
+
+\subsubsection*{Intersection}
+\begin{itemize}
+
+\item Intersection of two sets describes the elements that are members of both the specified Sets
+
+\item The intersection is denoted $\mathcal{A\cap B}$
+\[ \mathcal{A\cap B} = \{2\}\]
+
+\item only one element is a member of both A and B.
+\end{itemize}
+%--------------------------------------------------------%
+
+
+\subsection*{Union and intersection of sets}
+
+\begin{itemize}
+\item The \textbf{union} of two sets A and B is a set containing all the elements in
+either A or B (or both)
+i.e.
+\[A \cup B = {x / x \in A \mbox{ or } x \in B}.\]
+\item The \textbf{intersection} of two sets A and B is a set containing all the elements
+that are both in A and B
+i.e.
+\[A \cap B = {x / x \in A \mbox{ and }x \in B}\].
+
+\item If sets A and B have no elements in common, i.e. $A \cap B = \emptyset$,then A and B
+are termed \textbf{disjoint sets}.
+\end{itemize}
+
+
+\subsection{Set operations}
+
+Suppose X and Y are sets. Various operations allow us to build new sets from them.
+
+\begin{description}
+\item[Union]
+The union of X and Y, written $X\cup Y$, contains all the elements in X and all those in Y. Thus $A \cup B = \{1, 2, 3, red, green, blue\}$. 
+As A is a subset of E, the set $A \cup E$ is just E.
+
+\item[Intersection]
+
+The intersection of X and Y, written $X \cap Y$, contains all the elements that are common to both X and Y. Thus ${1,2,3,red,green,blue} \cap {2,4,6,8,10} = {2}$.
+
+
+\end{description}
+
+%---------------------------------%
+%------------------------------------------------------------------------%
+
+
+
+\section{Set Theory Operations}
+\begin{enumerate}
+\item The Universal Set $\mathcal{U}$
+\item Union
+\item Intersection
+\item Set Difference
+\item Relative Difference
+\end{enumerate}
+
+\section*{Set Operations}
+\begin{itemize}
+\item Union ($\cup$) - also known as the \textbf{OR} operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
+\item Intersection ($\cap$) - also known as the \textbf{AND} operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
+\item Complement ($A^{\prime}$ or $A^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
+\end{itemize}
+
+
+%--------------------------------------------------------%
+
+
+
+\subsubsection*{Intersection}
+\begin{itemize}
+
+\item Intersection of two sets describes the elements that are members of both the specified Sets
+
+\item The intersection is denoted $\mathcal{A\cap B}$ 
+\[ \mathcal{A\cap B} = \{2\}\]
+
+\item only one element is a member of both A and B.
+\end{itemize}
+
+%--------------------------------------------------------%
+
+
+\subsection{Important Operations in Set Theory}
+
+\begin{itemize}
+\item Union ($\cup$) - also known as the OR operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
+\item Intersection ($\cap$) - also known as the AND operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
+\item Complement ($^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
+\end{itemize}
+
+%---------------------------------------%
+\subsection*{Dice Rolls}
+Consider rolls of a die. What is the universal set?
+
+\[ \mathcal{U} = \{1,2,3,4,5,6\} \]
+
+%--------------------------------------%
+\subsection*{Worked Example}
+
+Suppose that the Universal Set $\mathcal{U}$ is the set of integers from 1 to 9.
+\[ \mathcal{U} = \{1,2,3,4,5,6,7,8,9\}, \]
+
+and that the set $\mathcal{A}$ contains the prime numbers between 1 to 9 inclusive.
+
+\[ \mathcal{A} = \{1,2,3,5,7\}, \]
+
+and that the set $\mathcal{B}$ contains the even numbers between 1 to 9 inclusive.
+
+\[ \mathcal{B} = \{2,4,6,8\}. \]
+
+
+\subsubsection*{Intersection}
+\begin{itemize}
+
+\item Intersection of two sets describes the elements that are members of both the specified Sets
+
+\item The intersection is denoted $\mathcal{A\cap B}$ 
+\[ \mathcal{A\cap B} = \{2\}\]
+
+\item only one element is a member of both A and B.
+\end{itemize}
+%--------------------------------------------------------%
+
+
+\subsection*{symbols}
+$\varnothing$,
+$\forall$,
+$\in$,
+$\notin$,
+$\cup$
+%----------------------------------------------------------- %
+\newpage
+
+\section{Set Operations}
+Set Operations include Set Union, Set Intersection, Set Difference, Complement of Set, and Cartesian Product.
+
+\subsection{Set Union}
+The union of sets A and B (denoted by $A \cup B$) is the set of elements which are in A, in B, or in both A and B. Hence, $A \cup B={x|x \in \mbox{ A OR x } \in B}$.
+
+Example; $If A={10,11,12,13}$ and $B = {13,14,15}$, then $A \cup B={10,11,12,13,14,15}$. (The common element occurs only once)
+
+%=========================================%
+\subsection{Set Intersection}
+The intersection of sets A and B (denoted by $AnB$) is the set of elements which are in both A and B. Hence, $A \cap B={x|x \in A AND x \in B}$.
+
+Example - If $A={11,12,13}$ and $B={13,14,15}$, then $A \cap B={13}$.
+
+
+%======================================================================================= %
+\newpage
+\section*{Set Operations}
+\begin{itemize}
+\item Union ($\cup$) - also known as the \textbf{OR} operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
+\item Intersection ($\cap$) - also known as the \textbf{AND} operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
+\item Complement ($A^{c}$ or $A^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
+\end{itemize}
+
+\newpage
+\subsection*{Union and intersection of sets}
+\begin{itemize}
+\item The \textbf{union} of two sets A and B is a set containing all the elements in
+either A or B (or both)
+i.e.
+\[A \cup B = {x / x \in A \mbox{ or } x \in B}.\]
+\item The \textbf{intersection} of two sets A and B is a set containing all the elements
+that are both in A and B
+i.e.
+\[A \cap B = {x / x \in A \mbox{ and }x \in B}\].
+\item If sets A and B have no elements in common, i.e. $A \cap B = \emptyset$,then A and B
+are termed \textbf{disjoint sets}.
+\end{itemize}
+\newpage
+%--------------------------------------------------------%
+\subsubsection*{Intersection}
+\begin{itemize}
+\item Intersection of two sets describes the elements that are members of both the specified Sets
+\item The intersection is denoted $\mathcal{A\cap B}$
+\[ \mathcal{A\cap B} = \{2\}\]
+\item only one element is a member of both A and B.
+\end{itemize}
+%--------------------------------------------------------%
+
+
+%======================================================================== %
+\section{Set operations}
+Suppose X and Y are sets. Various operations allow us to build new sets from them.
+\begin{description}
+\item[Union]
+The union of X and Y, written $X\cup Y$, contains all the elements in X and all those in Y. Thus $A \cup B = \{1, 2, 3, red, green, blue\}$. As A is a subset of E, the set $A \cup E$ is just E.
+\item[Intersection]
+The intersection of X and Y, written XnY, contains all the elements that are common to both X and Y. Thus {1,2,3,red,green,blue} n {2,4,6,8,10} = {2}.
+\end{description}
+%---------------------------------%
+\subsection{Important Operations in Set Theory}
+\begin{itemize}
+\item Union ($\cup$) - also known as the OR operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
+\item Intersection ($\cap$) - also known as the AND operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
+\item Complement ($^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
+\end{itemize}
+%================================= %
+\subsection*{Example 1: }
+\begin{verbatim}
+If $U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}$, \\
+$A = {2, 4, 6, 8, 10}$, \\
+$B = (1, 3, 6, 7, 8}$ \\
+$C = {3, 7}$, \\
+find $A \cap B$, $A \cup C$, $B \cap A^{c}$, $B \cap C^{c}$
+\end{verbatim}
+\begin{verbatim}
+Solution:
+$U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}$\\
+$A = {2, 4, 6, 8, 10}$\\
+%$B = (1, 3, 6, 7, 8} $\\
+$C = {3, 7}$\\
+%A n B = {6, 8}
+%A \cap C = {2, 3, 4, 6, 7, 8, 10}
+%B n A^C = {1, 3, 7}
+%B n C^C = {1, 6, 8}
+\end{verbatim}
+\begin{verbatim}
+%> A
+%[1]  1  8  9 10
+%> B
+%[1] 4 7 9
+%> C
+%[1] 1 2 3 4 9
+%> D
+%[1] 2 5 6
+\end{verbatim}
+
+%--------------------------------------------------------%
+\subsubsection*{Intersection}
+\begin{itemize}
+\item Intersection of two sets describes the elements that are members of both the specified Sets
+\item The intersection is denoted $\mathcal{A\cap B}$
+\[ \mathcal{A\cap B} = \{2\}\]
+\item only one element is a member of both A and B.
+\end{itemize}
+%--------------------------------------------------------%
+
+%--------------------------------------------------------%
+\subsection{Set Operations}
+Consider the universal set U such that $U=\{1,2,3,4,5,6,7,8,9\}$  and the sets $A=\{2,5,7,9\}$  and  $B=\{2,4,6,8,9\}$
+Perform the following binary operations
+\begin{enumerate}
+\item A-B
+\item  A ?B
+\item  $A \cap B$
+\item $A\cup B$
+\item $A^{c} \cup B^{c}$
+\item $A^{c}\cap B^{c}$
+\end{enumerate}
+
+
+
+
+\end{document}

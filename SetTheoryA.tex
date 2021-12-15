@@ -1,0 +1,758 @@
+% Chapter 2
+% Sets and Binary Operations
+%
+% Summary
+% Set notation, specifying sets by the listing method and rules of inclusion method; special sets of
+% numbers; empty set; cardinality; subsets, power set; set complement; binary operations on sets:
+% union, intersection, difference and symmetric difference; Venn diagram, membership table; laws of
+% set algebra.
+%
+% References: Epp Sections 5.1 (pp 231-237), 5.2, 5.3 (pp 258-264) or M&B Sections 2.1, 2.2, 2.3,2.4.
+%-------------------------------------------------------------------------------------------- %
+% mgmt maths
+
+
+%-------------------------------------------------------------------------------------------------- %
+% CHAPTER 2. SETS AND BINARY OPERATIONS 19
+\smallskip  %GOOD
+\frametitle{Introduction to Set Theory}
+\Large
+Deﬁnition 2.1 
+We use the symbol E to mean belongs to and ¢ to mean does not belong to.
+Thus we write y E X to denote that (the element) y belongs to (the set) X and y §§ X to indicate
+that y is not a member of the set X.
+%------------ %
+%IN and NOTIN symbols
+%------------------------------------------------- %
+\smallskip  %GOOD
+\frametitle{Introduction to Set Theory}
+\Large
+Examples:
+
+\begin{itemize}
+\item If A is the set of all integers then $14 \in A$ but $3.14 \notin A.$
+\item Since sets are determined by their elements we say that A = B if and only
+if they have the same elements.
+
+\item $\emptyset$ represents the empty or null set, i.e. a set containing no elements.
+\item The set containing everything is termed the \textbf{Universal set} and is usually
+written as \textbf{U}.
+\end{itemize}
+\smallskip 
+%EMPTY SET
+%UNIVERSAL SET
+\smallskip 
+
+
+Example 2.2 Referring to the sets D and B deﬁned in Example 2.1, we can say that $5 \in D$, but
+5 63 B. E1
+%-------------------------------------------------------------------------------------------
+You will meet quite a lot of new notation in this chapter. In order for it to become familiar, it is
+important to verbalise the symbol as you read it. 
+
+So, in Example 2.2, we write $5 \in D$, but we
+read this as “5 belongs to (set) D”, or “5 is in D”. Similarly, we write $5 \notin B$, but read this as
+“5 does not belong to (set) B" or “5 is not in B”.
+%---------------------------------------------------------------------- %
+\smallskip 
+Sometimes the elements in the set are in a sequence that is easily recognised when we are given
+the ﬁrst few terms. In this case, instead of listing every member of the set, we can use a sequence
+of three dots (called an \textbf{elipsis}) to mean “et cetera” or “and so on”, as the following example
+illustrates.
+\smallskip 
+%------------------------------------- %
+\smallskip  %GOOD
+Example 2.3 Let H be the set of integers from 1 to 100. We Write
+\[H: {1,2,3,...,100}.\]
+ln a similar way, we can express the set of positive odd integers as
+\[K : {1,3,5,7,..  \]
+\smallskip 
+%------------------------------------- %
+%REAL NUMBERS
+%NATURAL NUMBERS
+%INTEGERS
+
+\smallskip 
+\frametitle{}
+%CHAPTER 2. SETS AND BINARY OPERATIONS 20
+This tells us that the universal set is \mathbb{Z} and the rule of inclusion is that n must be between 1 and
+100 inclusive; the colon stands for the words such that, and so we would read this description of
+H as
+H is the set of integers 11 such that $1 \leq n \leq 100$.
+Similarly, we could specify the set K of Example 2.3 as
+\[K = {m \in Z+ : m is odd}. \]
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+Example 2.5 Let X be the set of real numbers that satisfy the equation I2 — z = O. Then we
+could write
+X={a:Ell¥:r2-220},
+read as
+X is tlle set of real numbers 1: such that 1:2 -— :1: = 04 E1
+
+
+
+\smallskip 
+\frametitle{Even and odd integers}
+Given an integer, you could probably say immediately whether it is odd or even, but how do we
+deﬁne the set of even integers and the set of odd integers? To test whether an integer is even we
+divide it by 2: the even integers are just those that are divisible by 2; the odd integers are just
+those that are not divisible by 2. Hence the set of even integers is
+{0, 2, -2,4, —4,6, —6 . . 4}
+\smallskip 
+%--------------------------------------------------- %
+\smallskip 
+Notice that O is even, and even integers can be negative as well as positive, The set of odd integers
+is
+{1, -1,3, —3,5, —-5, . . 
+As we saw in Chapter 1, another way of saying that an integer is divisible by 2 is to say that it is
+a multiple of 2. Thus an even integer is a number that can be expressed in the form 2m, where
+m Q Z. The set of even integers can therefore be expressed by the rules of inclusion method as
+{Zm : m E 
+This is read
+“the set of all numbers of the form 2m, where m is an integer.”
+\smallskip 
+%--------------------------------------------------- %
+\smallskip 
+\begin{itemize}
+\item Any odd integer can be obtained by adding 1 to (or subtracting 1 from) some even integer. Thus
+the set of odd integers can be expressed as
+%{2m+l:mEZ}or{2m~l:mEZ}.
+\item Other sets of integers which have as deﬁning property that they are all multiples or powers of a
+given ﬁxed integer can be expressed in a similar way.
+\end{itemize}
+
+\smallskip 
+%--------------------------------------------------- %
+\smallskip 
+%Example 2.7 
+\begin{itemize}
+\item The set $\{.. ,-20,—10,0,10,20,...\}$ of multiples of 10 can be expressed by the rules
+of inclusion method as
+%\[{I00 : (1 G Z},\]
+\item The set $\{1,10,100,1000,...\}$ can be expressed as ’
+{10' =rez,r3 0}.n
+\end{itemize}
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+
+%CHAPTER 2. SETS AND BINARY OPERATIONS 21
+%2.2 Subsets
+Learning Objectives
+When you have completed your study of this section, you should be able to:
+e state the condition for a set to be contained in another set as a subset and the condition for
+two sets to be equal; 
+\begin{itemize}
+\item use subset notation correctly;
+\item  say what is meant by the cardinality and the power set of a finite set;
+\item  ﬁnd the power set of a given ﬁnite set.
+\end{itemize}
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+Introduction -
+When we are considering a set, it often arises that we would like to pick out just those objects in
+the set which satisfy a given condition. When we do this, we are picking a subset of the given set.
+Of course, if all the objects in the original set satisfy the condition, the subset will contain the
+same members as the original set. 
+
+
+\subsection*{Exercises}
+For each of the following sets, write out the set using the listing method.
+Also write down the cardinality of each set.
+
+\begin{itemize} 
+\item $\{ s : s $ is an negative integer $ -10 \leq s \leq 0 \}$
+\item $\{ t : t $ is an even number $ 1 \leq t \leq 20 \}$
+\item $\{ u : u $ is a prime number $ 1 \leq u \leq 20 \}$
+\item $\{ v : v $ is a multiple of 3 $ 1 \leq v \leq 20 \}$
+\end{itemize}
+
+
+
+%-------------------------------------%
+ % Binary Operations on Sets (2.3.2)
+ % Union , Intersection, Symmetric Difference
+ % Set Difference
+
+
+
+
+%-------------------------------------% Ellipsis
+
+When using Ellipsis, it should be clear what the pattern is
+
+%-------------------------------------%
+
+
+%-----------Reference to section 2.2.3 Power Sets
+
+
+
+
+%-------------------------------------%
+
+ %----(Reference to Section 2.2.2 Cardinality)
+
+
+
+%-------------------------------------% % Complement of a set
+
+
+%--------------------------------------%
+\subsection*{ Three Sets }
+
+%- Section 2.3.5 %- Associative Law %- Distribution Law
+
+
+
+
+
+%-------------------------------------% %- Section 3
+Propositional Logic A statement is a declarative sentence that
+is either true or false.
+\begin{itemize}
+\item $\tilde q$ not q \item $p \vee q$ \item $p \wedge \tilde
+q$
+\end{itemize}
+
+
+
+%======================================================================================= %
+
+Question 5
+
+-----------------------------------------------------
+
+
+--------------------------------------------
+
+Let A, B be subsets of the universal set \mathcal{U}.
+
+Use membership tables to prove De Morgan's Laws.
+
+
+
+Construct Membership tables for each of the sets
+(A-B) - C
+A-(B- C)
+
+(A-B) -C = A-(B-C)
+A
+
+
+
+\begin{itemize}
+\item[a.] (1 mark) Write out the sample space for the outcomes for both players A and B.
+\item[b.] (1 mark) Write out the sample space for the outcomes of C, where C is the difference of the two scores (i.e. B-A)
+\item[c.] (1 mark) Are the sample points for the sample space of C equally probable? Provide a brief justification for your answer.
+\end{itemize}
+
+%----------------------------------------------------------%
+\newpage
+\section*{Section B: Set Operations}
+\begin{itemize}
+\item[B.1] complement of A $A^{\prime}$
+\item[B.2] Union $A \cup B$
+\item[B.3] Intersection $A \cap B$
+\item[B.4] Relative Difference $A \otimes B$
+\item[A.5]
+\item[A.6]
+\item[A.7]
+\item[A.8]
+\end{itemize}
+\newpage
+
+
+
+\begin{itemize}
+\item Subsets Notation of a subset
+\item Cardinality of a set
+\item Power of a set
+\end{itemize}
+
+\subsection*{Operation on Sets}
+
+\begin{itemize}
+\item The complement of Set
+\item Binary Operations
+\begin{itemize}
+\item Union
+\item Intersection
+\end{itemize}
+\item Membership tables
+\item Laws for Combining Sets
+\end{itemize}
+
+
+%----------------------------------------------------------%
+\newpage
+\section*{Formulae}
+\begin{itemize}
+
+
+
+
+\item Bayes' Theorem:
+\begin{equation*}
+P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
+\end{equation*}
+
+
+
+\item Binomial probability distribution:
+\begin{equation*}
+P(X = k) = ^{n}C_{k} \times p^{k} \times \left( 1-p\right) ^{n-k}\qquad \left( \text{where}\qquad
+^{n}C_{k} =\frac{n!}{k!\left(n-k\right) !}. \right)
+\end{equation*}
+
+\item Poisson probability distribution:
+\begin{equation*}
+P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
+\end{equation*}
+\end{itemize}
+
+\end{document} 
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+At the other extreme, it may turn out that none of the members
+of the set satisfy the condition, and then our subset will be the empty set. More typically though,
+some but not all of the members of the original set will satify our condition to be in the subset.
+ln this section, we shall introduce a formal test for a subset and some important notation.
+
+\smallskip 
+\section{2.2.1 Notation for subsets}
+%----------------------------------------- %
+\smallskip 
+Deﬁnition 2.4 Given two sets A and B, the set A is said to be a subset 0fB if every element
+of/1 is also an element of B. When this is the case, we write A Q B.
+Notice that A Q A, for all sets A. We also regard the empty set Q) as a subset of every set.
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+Example 2.8 Let K 2 {l,3,5,7,...}. Then we can say that K Q Z+. We can also say that
+Z+ Q 7/I and that Z Q R.
+We can concatenate these relations between the sets, as follows:
+1<gz+gzgn.n
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+The previous example illustrates a general rule that follows from the deﬁnition of subset.
+Rule 2.5 IfA, B,C are sets such that A is a subset of B, and B is a subset of C, than A is also
+<1 subset of C. In symbols, this becomes:
+If/lQBandBQC’,thenAQC.
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+If it is true that both A Q B and B Q A, then A and B must contain the same elements. This
+observation leads to the following deﬁnition of equality of two sets.
+Deﬁnition 2.6 If it is true that both A Q B and B Q A, then we say that the sets A and B are
+equal and write A = B.
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+Example 2.9 Suppose X = {[1, 1}, Y : {l,0} and Z = {1,l,0,1,0]. Then since each of these
+sets contain just the numbers 0 and 1, we have X = Y : Z. E1
+These equalities illustrate the fact that a set is determined by its elements, the method of speciﬁ»
+cation is not important; further, we may ignore repetitions of elements and also the order in which
+the elements are written.
+\smallskip 
+%----------------------------------------- %
+% CHAPTER 2. SETS AND BINARY OPERATIONS 22
+\smallskip 
+
+
+Deﬁnition 2.7 IfA Q B but /l 75 B, then A we say that A is a proper subset ofB. In this case,
+B contains at least one element that is not in A. This is written symbolically as A C B.
+You will have noticed that the relation “Q” for sets has some of the properties of “g” for real
+numbers. For example, if we have numbers 1:, y, z such that :1: § y and y f z, then we know that
+z f z; also, if we have numbers a, b such that a § b and b § 11, then we know that a = b. However,
+there is an important difference. 
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+For any two real numbers 2,3,1, we know that at least one of the
+statements 1: 5 y and y § :0 must be true. But in the case of sets, it is easy to ﬁnd examples of
+pairs of subsets X,Y of the same universal set for which neither of the statements X Q Y and
+Y Q X is true.
+\smallskip 
+%----------------------------------------- %
+\smallskip 
+Example 2.10 The sets X 1: {1,3,5} and Y = {1,2,6} are both subsets of the set of decimal
+digits D. Clearly, neither the statement X Q Y nor the statement Y Q X is true. U
+Deﬁnition 2.8 Let A,B be sets such that neither of the statements A Q B nor the statement
+B Q A is true. Then we say that the sets A, B are noncomparable.
+\smallskip 
+%----------------------------------------- %
+% 1.3 Sub-sets
+\smallskip 
+
+If A and B are two sets and all the elements of A also belong to B then it
+can be said that:
+A is contained in B
+or A is a sub-set of B
+or B contains A.
+These expressions are all equivalent and may be symbolically written as
+A ? B.
+\smallskip 
+%----------------------------------------- %
+\section{2.2.2 Cardinality of a set}
+Deﬁnition 2.9 A set is called finite when it contains a finite numher of elements and otherwise
+it is called inﬁnite. The number of distinct elements in u ﬁnite set S is called its cardinality.
+Notice that we use the word distinct in mathematics to mean “distinguishable” or“diﬁerent".
+
+\smallskip 
+%----------------------------------------- %
+Example 2.11 The sets X,Y, Z of Example 2.9 each have cardinality 2, the set H = {n € ZZ : l §
+n S 100} has cardinality 100, whereas Z, Q, and TR are all examples of inﬁnite sets. El
+Note that since the empty set contains no elements, it has cardinality 0.
+\section{2.2.3 Power set}
+Counting subsets
+Now suppose we are given a ﬁnite set S. We might want to ask how many distinct subsets does S
+contain? ln order to count all possible subsets of a set of given cardinality, we shall show how We
+can code each of them with a binary string. Consider the following problem.
+
+%----------------------------------------------------------------------------------- %
+\section{EXAMPLE}
+Example 2.12 The College Refectory is offering three vegetables, beans, carrots and tomatoes to
+accompany your main dish. You may, of course, not wish to order any of these, but if you do, you
+may choose any onc, two or three of them. How many different possibilities arise‘?
+Suppose we code the possible choices for your order using a. 3~bit binary string. We record 1 if you
+choose an item and a 0 if you reject it. The ﬁrst bit represents your decision on beans, the second
+on carrot-s and the third on tomatoes. But each possible order can also be regarded as a subset
+of the set V : {b,c,t} (where b = beans, c = carrots and t : tomatoes). The correspondence
+between the subsets and the 3-bit codes is given in the table below.
+subset] 0 {b} {C} {r} {b,¢} {b,t} {qt} {b,¢,t}
+code |000 100 010 001 110 101 011 111
+
+%---------------------------------------------------------------------------------------- %
+Thus there are in all 8 choices, each represented by a different 3-bit binary string. Further, each
+possible 3~bit binary string corresponds to a different subset, so that the table above shows a
+one-to-one correspondence between the subsets of V and the set of all 3-bit binary strings. D
+We can extend this method to code the subsets of any ﬁnite set, by using binary strings of an
+appropriate length.
+\smallskip 
+%--------------------------------------------------- %
+\smallskip 
+
+
+Example 2.13 In order to code the subsets of the set D = 6,7, 8, 9}, we must use
+the set of 10-bit binary strings. T hen, for example, the subse of D is represented by
+5“:-“H
+,»_..¢=
+F’.-»
+1-‘Io
+5*-”<;.=
+§”'>z=-
+:59‘
+
+%------------------------------------------------ %
+% CHAPTER 2. SETS AND BINARY OPERATIONS 23
+the string 1111100000; and the subset of D represented by the string 1100010101 is {0, 1, 5,7, 9}.
+Cl
+Now we can generalise this idea, to give a formula for the number of subsets of a set containing
+n elements, where n is any positive integer. Every subset of a. set containing n elements can
+be represented in a unique way as an n-bit binary string. Conversely, every n-bit binary string
+represents a unique subset. So there are the same number of subsets as there are n~bit binary
+strings. We shall see later in the course that this number is 2". This implies the following result:
+%---------------------------------------------- %
+Theorem 2.10 A set with n elements has exactly 2" subsets.
+Deﬁnition 2.11 We call the collection or family of all subsets ofa set S the power set of S and
+denote it by 73(5).
+%--------------------------------------------- %
+The term power set derives from the fact that when the cardinality of S is n, then the cardinality
+of ’P(.5') is 2“. Notice that both 0 and S are members of'P(S); they correspond respectively to the
+binary strings in which each bit is 0 and in which each bit is 1.
+The situation in which we have a set whose elements are themselves sets calls for some care in the
+use of notation.
+%---------------------------------------------------- %
+Example 2.14 Let D : {0,1,2,...,9}. Then we have seen that we write the statement “5 is an
+element of S” as
+5 E 5.
+The set {5} denotes the subset of D containing just the element 5‘ We express the Tact that {5}
+is a subset of D by writing
+{5} Q D
+However, {5} is a member of the family of subsets of D, that is, the powerset of D. We express
+this fact by writing
+{5} € 77(1)).
+Notice also, that the subset {0} is not the empty set: it is the subset of D containingjust the digit
+[]_ El
+
+
+\section{1.6 Differences and complements}
+If A and B are sets then the difference set A - B is the set of all elements
+of A which do not belong to B.
+If B is a sub-set of A, then A - B is sometimes called the complement of
+B in A. When A is the universal set one may simply refer to the
+complement of B to denote all things not in B. The complement of a set A
+is denoted as Ac or A-.
+Note: De Morgan’s Theorems:
+(A ? B)c = Ac ? Bc
+(A ? B)c = Ac ? Bc
+The above relationships are most easily confirmed by using a Venn
+diagram (see below) to indicate that both sides of the above equations
+amount to the same areas of the diagram.
+
+%------------------------------------------------------------------------- %
+\section{2.3 Operations on Sets}
+\frametitle{Learning Objectives}
+When you have completed your study of this section, you should be able to:
+\begin{itemize}
+\item deﬁne the set complement of a set and ﬁnd the complement of a given set;
+\item deﬁne the binary operations of union, intersection, set difference and symmetric difference of
+two sets and illustrate each of these operations by a Venn diagram;
+\item  ﬁnd the union, intersection, set difference and symmetric difference of two given sets;
+\item  state and use the commutative, associative and distributive laws for set union and intersec-
+tion;
+\item  use membership tables and Venn diagrams to establish relations between given sets.
+\end{itemize}
+
+\smallskip 
+%------------------------------------------------------------------------ %
+Introduction
+In this section, we suppose that A, B,C are subsets of some universal set Ll. We shall deﬁne
+operations that can be performed on these subsets to yield other subsets of M. We shall make
+use of a. pictorial representation of sets, called Venn diagrams and also an equivalent, but more
+general, method of deﬁning subsets of a universal set by using membership tables. We consider
+how both these methods of representation can be used to verify relations between sets.
+
+
+
+CHAPTER 2. SETS AND BINARY OPERATIONS 24
+2.3.1 The complement of a set
+Deﬁnition 2.12 The set of elements 0fLJ that are not in A is called the complement of A,
+denoted by A’. Thus
+A’ r: {:2 1 :1: ¢ A}.
+
+%--------------------------------------------------------------- %
+Common alternative notations found in textbooks for the complement of A are ~ A and Z.
+We illustrate the relation between the sets A and A’ in a Venn diagram in Figure 2.1. In drawing a
+Venn diagram, we assume that all members of the universal set are contained within the rectangular
+frame of the picture. We subdivide the rectangle to depict subsets of the universal set. There are
+two conventions:
+1. no element is depicted as lying on any boundary line of a set;
+2. some regions of the diagram may contain no elements.
+We usually shade the region of the diagram containing all elements in the indicated set. 
+%---------------------------------------------------------------- %
+i
+lg.
+Figure 2.1.
+Note the following two special cases of complements.
+Ll'=lland W=Z»l.
+Notice also that for any subset A Q Ll, we have
+(/ll)’ = {:0 1 1- Q A'} == A.
+
+%----------------------------------------------------------------- %
+\subsection{1.4 The order of sets: finite and infinite sets}
+A set is said to be finite if it contains only a finite number of elements;
+otherwise the set is an infinite set. The number of elements in a set A is
+called the order of A and is denoted by ¦A¦ or n(A) or nA.
+Examples:
+The set of all integers is an infinite set.
+The set of days in a week has order 7.
+
+%------------------------------------------------------------------ %
+\section{1.5 Union and intersection of sets}
+The union of two sets A and B is a set containing all the elements in
+either A or B (or both)
+i.e. A ? B = {x / x ? A or x ? B}.
+The intersection of two sets A and B is a set containing all the elements
+that are both in A and B
+i.e. A ? B = {x / x ? A and x ? B}.
+If sets A and B have no elements in common, i.e. A ? B = f,then A and B
+are termed disjoint sets.
+The above notation can be extended into the case of a family of sets (e.g.
+Ai, i = 1,2,.....k). Thus the union of the family is
+? Ai = {x / x ? Ai for some i = 1,2,...,k}
+i = 1, 2, ..., k
+The intersection of the family is:
+? Ai = {x / x ? Ai for every i = 1,2, ..., k}
+i =1, 2, ..., k
+Example:
+If A = {1,3,5,7} and B = {1,2,3,4,5} then A ? B = {1,2,3,4,5,7} and
+A ? B = {1,3,5}
+%-------------------------------------------------------- %
+\subsection{Activity 1.1}
+\smallskip If A = {a,b,c,d,e,f}, B = {a,e,g,h,j}, C = {b,c,f,g} what are the following sub-sets?
+\begin{itemize}
+\item[(i.)] A ? B
+\item[(ii)] B ? C
+\item[(iii)] A ? B^c
+\item[(iv.)] A ? (B ? C).
+\end{itemize}
+\smallskip 
+%----------------------------------------------------------- %
+\section{2.3.2 Binary operations on sets}
+The remaining operations that we deﬁne in this section combine two subsets and are in consequence
+known as binary operations.
+Deﬁnition 2.13 The set of elements that are in A or in B (including the elements that are in
+both sets) is called the union of A and B, and denoted by A U B. Thus we have
+/lUB={ZZ12EA07‘IEB(OTl7Oll'l)}.
+
+Deﬁnition 2.14 The set of elements that are in both A and B is called the intersection of A
+and B, and denoted by AU B. Thus we have
+AﬁB={z::|:EAana':c€B}.
+§
+I  I J u
+A U B is shaded region A F1 B is shaded region
+Figure 2.2.
+
+
+%------------------------------------------------------------------- %
+% CHAPTER 2 SETS AND BINARY OPERATIONS 25
+Deﬁnition 2.15 The set of elements that are in A but not in B is called the set diﬁerence of
+A and B, and denoted by A —- B. Thus we have
+A—B:{a;:zEAand2:¢B}.
+Deﬁnition 2.16 The set of elements that are in A or in B, but not in both, is called the sym-
+metric diﬁerence of A and B, and denoted by A63 B. Thus we have
+A®B:{;z'::cEAor::EB,butnotboth}.
+There are several ways of expressing the symmetric difference in terms of the other binary opera-
+tions we have deﬁned. For example
+A93 = (A—B)U(B—/1)
+= (.AUB)~(BF1A).
+l 7 U l   M
+A — B is shaded region A ® B is shaded region
+Figure 23.
+Notice that in drawing a Venn diagram to illustrate two sets in general, we depict the sets as
+overlapping, as shown in Figures 2.2 and 2.3. Drawn in this way, the boundaries of the sets
+partition the Whole area (representing Z1) into four discrete regions. We are not saying that in
+every example there are necesarily elements in each of these regions; in any particular example
+it may happen that one or more of the regions is empty. In particular, if the region representing
+A H B is empty, then A and B are said to be disjoint subsets.
+%------------------------------------- %
+Example 2.15 Suppose Ll 2 Z, A : {1,3,5,7, 9}, B 2 {2,4,5,6,7,8} and C : {Q}4}~ Then
+Au B = {1,2,3,4,5,s,7,s,9}; Ann = {an}; A—B = {1,3,9}; B—A = {2,4,e,s} and
+A  E = {'l,3,9,2,4,6,8}. However, A O C = U, so we can say that the subsets A and C are
+disjoint. D
+
+%-------------------------------------- %
+It follows directly from the deﬁnitions of union and intersection that A O B is a subset of each
+of the sets A and B; similarly, both A and B are subsets of A U B. You can easily verify these
+statements from the Venn diagrams shown above.
+
+\subsection{2.3.3 Laws for binary operations}
+Rule 2.17 (Identity and complement laws). Let A be a subset ofa universal set Z1. Then
+(i) Aﬁldflﬂ andAU@=A;
+(ii) AOL! :A andAUZ1 :11;
+(m) AH/5l'=Ql andAUA’=Ll. D
+Examples of binary operations on the real numbers are addition, multiplication and subtraction
+(division is a binary operation on the non-zero reals). Addition and multiplication obey certain
+rules that are so familiar that we tend to take them for granted. For example, we know that for
+any two real numbers a:,y,
+:1:+y=y+:c and zyzyx.
+
+
+%------------------------------------------------------------------------------- %
+% PAGE 26
+% CHAPTER. 2. SETS AND BINARY OPERATIONS 26
+We say that the operations of addition and multiplication are commutative, because we can
+commute (or interchange) the relative positions of :2 and y without changing the value of the sum
+or product. On the other hand, subtraction is not a commutative operation because the statement
+"1 -— y = y ~ r” is not true for all values of z and y. You will encounter another example of a
+non~commutative operation when we come to study matrix multiplication later in this course.
+In the case of the set operations union and intersection, however, it is clear from their deﬁnitions,
+and also from the Venn diagrams above, that A U B = B UA and A H B : B F1 A, for all sets A, B_.
+So we have:
+Rule 2.18 (Commutative laws). For all subsets A and B of a universal set L1, we have
+(i) AF1B= BOA; (ii) AUB:BU/l. D
+%-------------------------------------------------------------------------------- %
+\section{2.3.4 Membership tables}
+Before considering binary operations on more than two sets, it is useful to develop an alternative
+method to Venn diagrams for illustrating and verifying our results.
+We have already noted that in drawing a Venn diagram to illustrate two subsets A, B of a universal
+set Z/I, the boundaries of A and B partition the whole area (representing U) into four regions,
+labelled Ra, Rb, Ra and Rd respectively in Figure 2.4 below.
+U
+Rn
+Rb
+l B
+Figure 2.4.
+
+%----------------------------------- %
+
+We new give each of these regions a unique 2-bit binary code, using the following rule:
+e the ﬁrst bit is l if the region is inside the set A, and is 0 otherwise;
+0 the second bit is l if the region is inside the set B, and is O otherwise.
+For example, the region Ra is not in A and not in B, so we give it the binary code O0; R1, is not
+in A, but it is in B, so we give region R1, the code U1, and so on. We record the codes for these
+four regions in the following table [Figure 2.5). It is easy to interpret a given 2~bit binary code as
+a region; for example, 10 codes the region that is in A but not in B.
+region
+tututobo
+as vb
+»-¢>-¢<:ob>
+»-\o»-‘ow
+Figure 2.5.
+Notice that in the column indexed by set A in Figure 2.5, the entry 1 appears just in the rows for
+regions RC and Rd, the two regions that comprise set A. Similarly, the entry 1 in the B column
+occurs just in the rows corresponding to regions R1, and Rd, the regions comprising set B. We call
+the column corresponding to set A the membership table for A.
+We can construct membership tables for each of the subsets formed by combining the sets A and B
+by one of the binary operations U, O, — or Q9 in a. similar way. To determine the membership table
+for A ('\ B, note that this subset corresponds just to the region coded 11 [see Figure 2.2). Thus
+the column for A F1 B has a 1 in the row coded 11 and a zero in each of the other rows. The set
+
+%-------------------------------------------------------------------------------------------- %
+%PAGE 27
+AU B contains all elements in A or in B or in both. Hence we enter a 1 in the rows corresponding
+to each of the regions coded 10, 01 and 11, and enter O in the row coded 00 (see Figure 2.2). The
+resiilting membership tables are shown in Figure 2.6.
+Figure 2.6.
+%---------------------------------------------------------------------------------------------- %
+We can use either Venn diagrams or membership tables to prove the following two laws relating
+to set complements. They are due to the British mathematician Augustus De Morgan, who was a
+Professor of Mathematics at London University in the later part of the nineteenth century.
+
+>-1»-00>
++-»c>>--cm
+13>
+i-ooc:D
+KI1
+lb
+>-1»->-c>C
+W
+%------------------------------------------------------------------------------------ %
+\section{De Morgan‘s laws}
+Rule 2.19 (De M0rgan’s laws). Lei A,B be subsets ofa universal mu, than
+(il (.4 fl B)’ : A’ U B’;
+(ii) (Al U B)’ I /l’ H B’.
+These laws are very important and students often get them wrong, so let us also express them in
+words. The ﬁrst law says that the complement of the intersection of two sets is the union of their
+complements; the second law says that the complement of the union of two sets is the intersection
+of their complernerits.
+As an illustration of how we use membership tables to prove a relation between two sets, we use
+this method to prove (i).
+
+%--------------------------------------------------------------------------------- %
+\smallskip 
+\frametitle{Example 2.16}
+We need to construct and compare columns for $(A \cap B)^{c}$ and $A’ \cup B’$. To ﬁnd
+the column for (A O B)’, we ﬁrst obtain the column for A O B (see Figure 2.6) and then take
+its complement. Recollect that the complement of a given set comprises just those regions of the
+universal set that are not in the given set. Thus to obtain the membership table for (A I": B)’, we
+center l in each row in which AGE has O, and U in each row in which the AH B has a 1. This gives
+the following table.
+\smallskip 
+%-------------------------------------------------------------------------------------- %
+To construct a column for A’ U B’, we ﬁrst construct columns for A’ and B’ by taking the comple~
+moms of the rows for A and B respectively. Now the union of two sets contains any region that is
+in at least one of these sets. Thus we construct the column for A’ U B’ by putting a l in any row
+in which either A’ or B’ has a 1, and O just in the row[s) where both A’ and B’ have a O (the “set
+union rule” in Figure 2.6). This gives the following table.
+»-»--\oc>ﬁ>. i_1>-\<:>¢j1>
+>-Q»-4013; ._=@,_om
+cc»-i-\ is
+»-coo)
+c>»—o>- ‘I’
+f\
+I>>
+(:>>—4D-4!-—\ ‘3’_"_““g
+‘<
+Since the columns corresponding to (AF: B)’ and /l’UB’ are identical, the Venn diagram for each of
+these subsets will comprise precisely the same regions ofbl. Hence if at E [AﬁB)’, then :1: 6 A’ UB’
+and converselyi Thus these sets are equal, proving De Morgans law  U
+
+
+
