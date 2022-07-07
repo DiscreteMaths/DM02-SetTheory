@@ -1,52 +1,5 @@
 
 
-NOTATIONS FOR A SET:
-
-A set can be represented by two methods:
-1.ROSTER METHOD
-2.BUILDER METHOD
-ROSTER METHOD:
-
-In this method the elements of a set are separated by commas and are enclosed within curly brackets { }. For example:
-
-A = {1, 2, 3, 4, 5, 6} is a set of numbers.
-
-B = {Sunny, Joy, Kartik, Harish, Girish} is a set of names.
-
-C = {a, e, i, o, u} is a set of vowels.
-
-D = {apple, banana, guava, orange, pear} is a set of fruits.
-
-Listing the elements in this way is called Roster method. In this method, it is not necessary for the elements to be listed in a particular order. The elements of the set can be written just plainly, separated by commas and in any order.
-
-
-BUILDER METHOD:
-
-This method is also called Property method. In Builder method, a set is represented by stating all the properties which are satisfied by the elements of that particular set only.
-
-For example:
-
-If A is a set of elements less than 0, then in Builder method it will be written as
-
-A = {x: x < 0}, this statement is read as "the set of all x such that x is less than 0"
-
-If A is a set of all real numbers less than 7, then in Builder method it is written as A = {x   R: x < 7}
-
-Similarly,
-
-A = {2i: i is an integer} is a set of all even integers.
-
-A = {x   R: x ? 2} is a set of all real numbers except 2.
-
-A = {x   R: x > 3 and x < 7} is a set of real numbers greater than 3 but less than 7.
-
-A = {x   Z: x > 6} is a set of integers greater than 6.
-
-A = {x   Z: 2x + 1} is a set of all odd integers.
-
-
-
-
 % \item The Fibonacci sequence $f_n$ is defined recursively by the rule
 %   \begin{equation*}
 %     \begin{cases}
@@ -70,22 +23,6 @@ A = {x   Z: 2x + 1} is a set of all odd integers.
 %   \end{enumerate}
 
 
-
-% \pagebreak
-%   \begin{center}
-%     \textbf{Assignment 1}
-%     Due Tuesday Week 4 (Sept $28^th$)
-%   \end{center}
-
-%   Write an Octave function which computes square roots using Heron's method to as high an accuraccy as possible. The function should be called ``sqr\_root'' and must take the following form
-% \lstset{language=Octave}
-% \begin{lstlisting}[title=sqr\_root.m,frame=single]
-% function X=sqr_root(D)
-%     ....
-% endfunction
-% \end{lstlisting}
-
-
 %--------------------------------- %
 \section*{The Universal Set and the Empty Set}
 \begin{itemize}
@@ -96,33 +33,7 @@ A = {x   Z: 2x + 1} is a set of all odd integers.
 \item The other set that requires consideration is called the \textit{\textbf{empty set}}. The empty set is the unique set is the set with no elements. We write this as $\{ \}$ and denote this set by $\emptyset$.
 \end{itemize}
 
-%========================================================================================= %
-\newpage
-\section*{Rules of Inclusion, Listing and Cardinality}
-For each of the following sets, a set is specified by the rules of inclusion method and listing method respectively. Also stated is the cardinality of that data set.
-\subsection*{Worked example 1}
-\begin{itemize}
-\item $\{ x : x $ is an odd integer $ 5 \leq x \leq 17 \}$
-\item $x = \{5,7,9,11,13,15,17\}$
-\item The cardinality of set $x$ is 7.
-\end{itemize}
 
-\subsection*{Worked example 2}
-\begin{itemize}
-\item $\{ y : y $ is an even integer $ 6 \leq y < 18 \}$
-\item $y = \{6,8,10,12,14,16\}$
-\item The cardinality of set $y$ is 6.
-\end{itemize}
-
-\subsection*{Worked example 3}
-A perfect square is a number that has a integer value as a
-square root. 4 and 9 are perfect squares ($\sqrt{4} = 2$,
-$\sqrt{9} = 3$).
-\begin{itemize}
-\item $\{ z : z $ is an perfect square $ 1 < z < 100 \}$
-\item $z = \{4,9,16,25,36,49,64,81\}$
-\item The cardinality of set $z$ is 8.
-\end{itemize}
 
 \newpage
 
@@ -196,72 +107,8 @@ $C=\{2,6,12,15\}$ & \\ \hline $D=\{8,10,15\}$ & \\ \hline
  % Union , Intersection, Symmetric Difference
  % Set Difference
 
-%======================================================================================= %
-\newpage
-\section*{Set Operations}
-\begin{itemize}
-\item Union ($\cup$) - also known as the \textbf{OR} operator. A union signifies a bringing together. The union of the sets A and B consists of the elements that are in either A or B.
-\item Intersection ($\cap$) - also known as the \textbf{AND} operator. An intersection is where two things meet. The intersection of the sets A and B consists of the elements that in both A and B.
-\item Complement ($A^{\prime}$ or $A^{c}$) - The complement of the set A consists of all of the elements in the universal set that are not elements of A.
-\end{itemize}
-
-\subsection*{Exercise}
-Consider the universal set $U$ such that
-\[U=\{1,2,3,4,5,6,7,8,9\} \] 
-and the sets
-\[A=\{2,5,7,9\} \] 
-\[B=\{2,4,6,8,9\} \]
-
-\begin{multicols}{2}
-\begin{itemize}
-\item[(a)] $A-B$
-\item[(b)] $A \otimes B$
-\item[(c)] $A \cap B$
-\item[(d)] $A \cup B$
-\item[(e)] $A^{\prime} \cap B^{\prime}$
-\item[(f)] $A^{\prime} \cup B^{\prime}$
-\end{itemize}
-\end{multicols}
-
-%======================================================================================= %
-\newpage
-
-\section*{Venn Diagrams}
-
-Draw a Venn Diagram to represent the universal set
-$\mathcal{U} = \{0,1,2,3,4,5,6\}$ with subsets:\\
-$A = \{2,4,5\}$\\
-$B = \{1,4,5,6\}$\\
-
-\noindent Find each of the following
-\begin{itemize}
-\item[(a)] $A \cup B $
-\item[(b)] $A \cap B $
-\item[(c)] $A-B$
-\item[(d)] $B-A$
-\item[(e)] $A \otimes B$
-\end{itemize}
-\newpage
 
 
-
-%------------------------------------------------------------------------%
-\begin{itemize}
-\item[(i)] Describe the following set by the listing method
-\[ \{ 2r+1 : r \in Z^{+} and r \leq 5  \} \]
-\item[(ii)] Let A,B be subsets of the universal set U.
-
-
-\end{itemize}
-
-%===================================================================================== %
-\subsection*{Question 1}
-
-\begin{itemize}
-\item $\{ s :  \mbox{ s is an odd integer and } 2 \leq s \leq 10 \}$
-\item $\{ 2m :  m \in Z \mbox{ and }5 \leq m \leq 10 \}$
-\item $\{ 2^t :  t \in Z \mbox{ and } 0 \leq t \leq 5 \}$
-\end{itemize}
 
 %=======================+============================================================== %
 \subsection*{Question 2}
@@ -271,31 +118,6 @@ $B = \{1,4,5,6\}$\\
 \item $\{0,5,-5,10,-10,15,-15,.....\}$
 \item $\{6,8,10,12,14,16,18\}$
 \end{itemize}
-
-\subsection*{Question 7 : Membership Tables}
-Using membership tables
-\begin{tabular}{|ccc|c|c|c|}
-\hline
-% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
-A & B & C & x & y & z \\\hline
-0 & 0 & 0 & 1 & 1 & 1 \\
-0 & 0 & 1 & 0 & 0 & 1 \\
-0 & 1 & 0 & 0 & 0 & 1 \\
-0 & 1 & 1 & 0 & 0 & 1 \\
-1 & 0 & 0 & 1 & 0 & 1 \\
-1 & 0 & 1 & 1 & 0 & 1 \\
-1 & 1 & 0 & 0 & 0 & 1 \\
-1 & 1 & 1 & 1 & 0 & 1 \\
-\hline
-\end{tabular}
-\begin{itemize}
-\item[(i)] Draw a venn diagram to show three subsets A,B and C of a universal set U intersecting in
-the most general way?
-\item[(ii)] How are sets $X$ and $Z$ related?
-\item[(iii)] Can you describe each of the subsets X,Y and Z in terms  of the
-sets A,B,C using the operations union intersection and set complement.
-\end{itemize}
-%================================================================ %
 \subsection*{Question 8}
 \begin{itemize}
 
@@ -306,37 +128,6 @@ sets A,B,C using the operations union intersection and set complement.
 \item[(iii)]
 
 \end{itemize}
-
-\end{document}
-
-
-
-   
-
-
-
-
-%-------------------------------------% Ellipsis
-
-When using Ellipsis, it should be clear what the pattern is
-
-%-------------------------------------%
-
-
-%-----------Reference to section 2.2.3 Power Sets
-
-
-
-
-%-------------------------------------%
-
- %----(Reference to Section 2.2.2 Cardinality)
-
-
-
-%-------------------------------------% % Complement of a set
-
-
 %--------------------------------------%
 \subsection*{ Three Sets }
 
@@ -441,50 +232,9 @@ A
 
 
 \[ (A \cup B) \cap B^{\prime} \]
-%----------------------------------------------------------%
-\section*{Section C: Real and Rational Numbers}
-\begin{itemize}
-\item[C.1]
-\item[C.2]
-\item[C.3]
-\item[C.4]
-\item[C.5]
-\item[C.6]
-\item[C.7]
-\item[C.8]
-\end{itemize}
-\newpage
+
 %----------------------------------------------------------%
 \newpage
-\section*{Formulae}
-\begin{itemize}
-
-
-
-
-\item Bayes' Theorem:
-\begin{equation*}
-P(B|A)=\frac{P\left(A|B\right) \times P(B) }{P\left( A\right) }.
-\end{equation*}
-
-
-
-\item Binomial probability distribution:
-\begin{equation*}
-P(X = k) = ^{n}C_{k} \times p^{k} \times \left( 1-p\right) ^{n-k}\qquad \left( \text{where}\qquad
-^{n}C_{k} =\frac{n!}{k!\left(n-k\right) !}. \right)
-\end{equation*}
-
-\item Poisson probability distribution:
-\begin{equation*}
-P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
-\end{equation*}
-\end{itemize}
-
-
-
-%-------------------------------------%
-
 {Set Theory : Venn Diagrams}
 
 %%- \vspace{-0.5cm}
@@ -555,20 +305,6 @@ P(X = k) =\frac{m^{k}\mathrm{e}^{-m}}{k!}.
 \end{center} 
 
 
-%-------------------------------------%
-
-{Subsets and Elements of Sets}
-
-%%- \vspace{-0.5cm}
-\textbf{Elements of a Set}\\
-\begin{itemize}
-\item Sets are comprised of members, which are often called \textbf{elements}. 
-\item If a particular value ($k$) is an element of set $A$, then we would write this as
-\[k \in A \]
-
-\item If a single value $k$ is not an element of set $A$, then we write
-\[k \notin A \]
-\end{itemize}
 
 %------------------------------------- %
 
@@ -607,12 +343,6 @@ The single element set $\{5\} $ is a subset of $A$.
 {Subsets and Elements of Sets}
 
 %%- 
-\textbf{Proper Subsets}\\
-Given two sets $A$ and $B$, the set $A$ is a \textbf{proper subset} of set $B$ if every element of $A$ is also an element of $B$, but there are elements of set $B$ that are not in set $A$.
-
-
-We write this mathematically as
-\[A \subset B \]
 
 
 %-------------------------------------%
@@ -656,21 +386,4 @@ then $A$ and $B$ are said to be said to be \textbf{noncomparable sets}.
 
 \newpage
 
-(a) A sequence is given by the recurrence relation
-\[un+1 = un + n \]and u1 = 0.
-% (i) Calculate u3, u4, and u5. [2]
-(ii) Use induction to prove that
-un =
-n(n - 1)
-2
-forall n = 1.
-[5]
 
-%=======================================================================%
-) Another sequence is defined by the recurrence relation un = un-1+ 2n-1 and
-u1 = 1.
-% (i) Calculate u2, u3, u4 and u5.
-(ii) Prove by induction that un = n
-2
-for all n = 1.
-\end{document} 
